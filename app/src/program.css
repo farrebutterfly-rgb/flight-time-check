@@ -1,0 +1,10 @@
+/* Additions on top of the report's stylesheet, for the interactive parts. */
+.sel{font:500 15px var(--sans);padding:9px 10px;border:1px solid var(--line2);border-radius:9px;background:#fff;color:var(--ink);width:100%}
+textarea.code{width:100%;resize:vertical;min-height:220px;display:block;white-space:pre;word-break:normal}
+.res{white-space:pre-wrap;overflow-wrap:anywhere;max-height:440px;overflow:auto}
+.res.rbad{background:var(--badbg);border-color:#f3c9c5;color:#8f211c}
+.res.rok{background:var(--okbg);border-color:#bfe3cd;color:#0f5534}
+.grp>div>b[data-of]::after{content:" of " attr(data-of)}
+code.m{font:500 .9em var(--mono);background:#efefec;padding:1px 6px;border-radius:5px}
+.case .pill{justify-self:start}
+.est .say div{padding:10px 14px}

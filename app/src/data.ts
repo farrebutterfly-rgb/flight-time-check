@@ -89,3 +89,8 @@ export function shot(n: number, kind: "chat" | "web"): string | undefined {
 export { default as heroChat } from "../../screenshots/hero_chat.jpg";
 export { default as heroWeb } from "../../screenshots/hero_web.jpg";
 export { default as quotedShot } from "../../screenshots/quoted_field.jpg";
+
+const abShots = import.meta.glob("../../screenshots/ab/*.jpg", { eager: true, query: "?url", import: "default" }) as Record<string, string>;
+export function abShot(arm: string): string[] {
+  return Object.keys(abShots).filter((k) => k.split("/").pop()!.startsWith(`${arm}_`)).sort().map((k) => abShots[k]);
+}
