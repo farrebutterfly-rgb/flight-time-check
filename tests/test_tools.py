@@ -54,7 +54,12 @@ def test_mcp_server_returns_true_times():
 
     tools, result = asyncio.run(call())
     assert {"search_flights", "check_flights"} <= tools
-    payload = result[1] if isinstance(result, tuple) else json.loads(result[0].text)
+    if isinstance(result, tuple):          # mcp 1.x: (content, structured)
+        payload = result[1]
+    elif hasattr(result, "content"):       # mcp 2.x: CallToolResult
+        payload = json.loads(result.content[0].text)
+    else:                                  # older 1.x: list of content
+        payload = json.loads(result[0].text)
     times = [f["dep"]["time"] for f in payload["flights"]]
     assert "2026-12-15T22:15:00+01:00" in times and not any(t.endswith("Z") for t in times)
     assert server.search_flights("ARN", "XXX")["error"]

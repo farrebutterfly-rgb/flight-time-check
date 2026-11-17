@@ -10,7 +10,10 @@ Tools
 The upstream here is the recording in data/log.jsonl, because I have no access
 to the real tool. Swap RecordedUpstream for the real client to use it for real.
 """
-from mcp.server.fastmcp import FastMCP
+try:  # mcp 2.x
+    from mcp.server.mcpserver import MCPServer as FastMCP
+except ImportError:  # mcp 1.x
+    from mcp.server.fastmcp import FastMCP
 
 from contract import check_leg
 from guard import guard
