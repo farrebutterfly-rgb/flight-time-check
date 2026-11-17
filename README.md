@@ -77,16 +77,87 @@ In summer the gap is two hours. One extra search for 15 July 2027, Stockholm to 
 |---|---|
 | ![ChatGPT answer for 15 July 2027](screenshots/summer_chat.jpg) | ![Website for 15 July 2027](screenshots/summer_web.jpg) |
 
-## Run it
+## The prototype: a guard in front of the tool
 
-Python 3.9 or later, standard library only. `pytest` for the tests.
+The repository is more than the finding. It holds a working fix that can run today, in front of the tool, without touching the tool itself.
 
 ```
-python3 -m pytest -q      # 9 tests
+flight tool  →  guard.py  →  model in ChatGPT  →  traveller
+(local digits, Z)   (true offset, checked)
+```
+
+`guard.py` does three things to every flight before a model may read it:
+
+1. Reads the clock digits as the airport's local time and attaches that airport's UTC offset for that date.
+2. Checks in code that arrival minus departure equals `durationMinutes`.
+3. Holds the flight if the check fails. A held flight is not shown, and the reason is reported.
+
+```
+$ python3 demo.py
+ARN to GOT, 15 December 2026
+
+What the tool returns today            What the guard hands the model        Traveller sees
+2026-12-15T22:15:00Z                   2026-12-15T22:15:00+01:00             22:15 to 23:15   (UTC 21:15)
+```
+
+Why the reading of the digits is a policy and not a guess: when both airports share a time zone, "local time labelled UTC" and "really UTC" both add up against the duration. No check can tell them apart, and that is exactly where the model goes wrong. So the guard is told once, by whoever owns the data, what the digits mean.
+
+### As an MCP server
+
+`server.py` is an MCP server with the guard in front of the flight search. A model that calls `search_flights` gets time fields that are already true.
+
+```
+pip install mcp
+python3 server.py
+```
+
+| Tool | What it does |
+|---|---|
+| `search_flights(origin, destination, date)` | Flights with local time and the airport's offset. Held flights are listed with the reason |
+| `check_flights(flights)` | Runs the contract on any response and returns the violations |
+
+The upstream is `upstream.py`, a recording of the 25 searches in the shape ChatGPT quoted, because I have no access to the real tool. To use it for real, replace `RecordedUpstream` with a client for the real tool. Nothing else changes.
+
+### As a canary
+
+```
+$ python3 canary.py
+routes where the tool breaks a rule today:      23 of 25
+routes where the guard shows a rule-breaker:    0 of 25
+flights held by the guard:                      0 of 211
+```
+
+It exits with code 1 if anything that would be shown breaks the contract, so it can run daily and in CI. No model is involved.
+
+### On any response
+
+```
+$ python3 check.py examples/quoted_zrh_fco.json
+leg 1 ZRH-FCO: FAIL
+    dep.time 2026-12-15T07:10:00Z carries offset 0:00:00 but ZRH is at 1:00:00
+    arr.time 2026-12-15T08:40:00Z carries offset 0:00:00 but FCO is at 1:00:00
+1 of 1 legs break the contract
+
+$ python3 check.py --fix examples/quoted_zrh_fco.json | python3 check.py -
+leg 1 ZRH-FCO: ok
+```
+
+## Run it
+
+Python 3.9 or later. The checks use the standard library only. `pytest` for the tests and `mcp` for the server.
+
+```
+python3 -m pytest -q      # 25 tests
+python3 stats.py          # every number in this README, computed from data/
+python3 classify.py       # rebuilds data/results.json from data/log.jsonl
+python3 canary.py         # the two rules on all 25 routes, before and after the guard
+python3 demo.py ZRH FCO   # one route, before and after
 python3 replay.py         # 23 of 25 searches break a rule as returned today, 0 of 25 with the offset
 ```
 
-`replay.py` rebuilds payloads from the website's times, so its 23 of 25 follows from the time zones. The direct evidence is the 17 quoted flights and the 16 A/B trials.
+`replay.py` and `canary.py` rebuild payloads from the website's times, so their 23 of 25 follows from the time zones. The direct evidence is the 17 quoted flights and the 16 A/B trials.
+
+All 48 search screenshots, search by search, are in [SEARCHES.md](SEARCHES.md).
 
 ## Check it yourself in two minutes
 
@@ -101,17 +172,26 @@ The answer varies from run to run. Routes inside one time zone are where it fail
 | Path | What |
 |---|---|
 | `contract.py` | The two rules, and `to_contract()` which shows the change |
+| `guard.py` | The fix as running code: attach the offset, check the duration, hold what fails |
+| `server.py` | MCP server with the guard in front of the flight search |
+| `upstream.py` | Stand-in for the real tool, built from the recording |
+| `canary.py` | The two rules on all 25 routes, with an exit code |
+| `check.py` | Command line check and fix for any response |
+| `classify.py` | Matches what ChatGPT showed to the website and classifies each search |
+| `stats.py` | Every headline number, with 95 percent intervals |
 | `replay.py` | Runs the rules over the 25 logged searches |
-| `test_contract.py` | 9 tests |
+| `gallery.py` | Writes `SEARCHES.md` |
+| `tests/` | 25 tests, run in GitHub Actions on every push |
 | `data/log.jsonl` | One line per search: ChatGPT rows, ChatGPT's own note, website rows |
-| `data/results.json` | Classification per search, computed by the analysis script |
+| `data/results.json` | Classification per search, written by `classify.py` |
 | `data/quoted.json` | The 17 flights whose fields ChatGPT quoted |
 | `data/ab.json` | The nineteen A/B trials |
 | `data/repeat.json` | Ten repeats of one search, with time to answer |
 | `data/latency.json` | The "worked for" times read off ChatGPT |
-| `data/replay.json` | Output of `replay.py` |
+| `examples/` | The quoted fields as files for `check.py` |
 | `screenshots/searches/` | ChatGPT and website for each search, `rNN_chat.jpg` and `rNN_web.jpg` |
 | `screenshots/ab/` | The A/B trials: A and C with `Z`, B and D with the offset, E the stopgap |
+| `SEARCHES.md` | Every search with its class and both screenshots |
 | `report/Flight_time_check.html` | The full report as one page. Download it and open it in a browser |
 
 ## Limits
@@ -121,6 +201,7 @@ The answer varies from run to run. Routes inside one time zone are where it fail
 - The answer changes between runs. A newer model may repair more or fewer.
 - The A/B pasted the payload as text. It was not delivered through the app, and it covers two routes.
 - Fares: in 14 of 100 matched flights the fare in the chat differs from the matched website row by 2 to 31 SEK. Matching is by time and duration, not flight number, so this is an observation, not a finding.
+- The guard and the server run against a recording, not against the real tool. I have no MCP access.
 - Nobody was booked on a wrong flight in this test.
 
 ## Licence

@@ -1,0 +1,11 @@
+{
+ "dep": {
+  "iata": "ZRH",
+  "time": "2026-12-15T07:10:00Z"
+ },
+ "arr": {
+  "iata": "FCO",
+  "time": "2026-12-15T08:40:00Z"
+ },
+ "durationMinutes": 90
+}

@@ -66,7 +66,7 @@ def test_replay_of_logged_searches():
 def test_every_quoted_leg_breaks_rule_1_and_passes_once_fixed():
     import json
     from pathlib import Path
-    legs = json.load(open(Path(__file__).parent / "data" / "quoted.json"))["legs"]
+    legs = json.load(open(Path(__file__).parent.parent / "data" / "quoted.json"))["legs"]
     assert len(legs) == 17
     for leg in legs:
         assert any("offset" in e for e in check_leg(leg))

@@ -1,0 +1,15 @@
+[project]
+name = "flight-time-check"
+version = "1.0.0"
+description = "A live test of a flight search app inside ChatGPT, the time contract that fixes it, and a guard that enforces it."
+authors = [{ name = "Faris Sadik" }]
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+server = ["mcp>=1.2"]
+dev = ["pytest>=8", "mcp>=1.2"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

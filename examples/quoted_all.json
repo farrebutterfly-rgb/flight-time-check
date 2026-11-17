@@ -1,0 +1,189 @@
+[
+ {
+  "dep": {
+   "iata": "ARN",
+   "time": "2026-12-15T07:00:00Z"
+  },
+  "arr": {
+   "iata": "LGW",
+   "time": "2026-12-15T08:35:00Z"
+  },
+  "durationMinutes": 155
+ },
+ {
+  "dep": {
+   "iata": "CDG",
+   "time": "2026-12-15T06:50:00Z"
+  },
+  "arr": {
+   "iata": "MAD",
+   "time": "2026-12-15T09:05:00Z"
+  },
+  "durationMinutes": 135
+ },
+ {
+  "dep": {
+   "iata": "CDG",
+   "time": "2026-12-15T12:40:00Z"
+  },
+  "arr": {
+   "iata": "MAD",
+   "time": "2026-12-15T14:55:00Z"
+  },
+  "durationMinutes": 135
+ },
+ {
+  "dep": {
+   "iata": "AMS",
+   "time": "2026-12-15T07:00:00Z"
+  },
+  "arr": {
+   "iata": "BCN",
+   "time": "2026-12-15T09:15:00Z"
+  },
+  "durationMinutes": 135
+ },
+ {
+  "dep": {
+   "iata": "AMS",
+   "time": "2026-12-15T07:00:00Z"
+  },
+  "arr": {
+   "iata": "BCN",
+   "time": "2026-12-15T09:20:00Z"
+  },
+  "durationMinutes": 140
+ },
+ {
+  "dep": {
+   "iata": "OSL",
+   "time": "2026-12-15T07:30:00Z"
+  },
+  "arr": {
+   "iata": "CPH",
+   "time": "2026-12-15T08:45:00Z"
+  },
+  "durationMinutes": 75
+ },
+ {
+  "dep": {
+   "iata": "OSL",
+   "time": "2026-12-15T09:05:00Z"
+  },
+  "arr": {
+   "iata": "CPH",
+   "time": "2026-12-15T10:20:00Z"
+  },
+  "durationMinutes": 75
+ },
+ {
+  "dep": {
+   "iata": "GOT",
+   "time": "2026-12-15T06:00:00Z"
+  },
+  "arr": {
+   "iata": "AMS",
+   "time": "2026-12-15T07:35:00Z"
+  },
+  "durationMinutes": 95
+ },
+ {
+  "dep": {
+   "iata": "SYD",
+   "time": "2026-12-15T06:00:00Z"
+  },
+  "arr": {
+   "iata": "MEL",
+   "time": "2026-12-15T07:35:00Z"
+  },
+  "durationMinutes": 95
+ },
+ {
+  "dep": {
+   "iata": "SYD",
+   "time": "2026-12-15T07:00:00Z"
+  },
+  "arr": {
+   "iata": "MEL",
+   "time": "2026-12-15T08:35:00Z"
+  },
+  "durationMinutes": 95
+ },
+ {
+  "dep": {
+   "iata": "MAD",
+   "time": "2026-12-15T08:30:00Z"
+  },
+  "arr": {
+   "iata": "BCN",
+   "time": "2026-12-15T09:50:00Z"
+  },
+  "durationMinutes": 80
+ },
+ {
+  "dep": {
+   "iata": "MAD",
+   "time": "2026-12-15T15:15:00Z"
+  },
+  "arr": {
+   "iata": "BCN",
+   "time": "2026-12-15T16:40:00Z"
+  },
+  "durationMinutes": 85
+ },
+ {
+  "dep": {
+   "iata": "CPH",
+   "time": "2026-12-15T12:05:00Z"
+  },
+  "arr": {
+   "iata": "AMS",
+   "time": "2026-12-15T13:30:00Z"
+  },
+  "durationMinutes": 85
+ },
+ {
+  "dep": {
+   "iata": "FRA",
+   "time": "2026-12-15T06:50:00Z"
+  },
+  "arr": {
+   "iata": "VIE",
+   "time": "2026-12-15T08:15:00Z"
+  },
+  "durationMinutes": 85
+ },
+ {
+  "dep": {
+   "iata": "FRA",
+   "time": "2026-12-15T09:00:00Z"
+  },
+  "arr": {
+   "iata": "VIE",
+   "time": "2026-12-15T10:20:00Z"
+  },
+  "durationMinutes": 80
+ },
+ {
+  "dep": {
+   "iata": "ZRH",
+   "time": "2026-12-15T07:10:00Z"
+  },
+  "arr": {
+   "iata": "FCO",
+   "time": "2026-12-15T08:40:00Z"
+  },
+  "durationMinutes": 90
+ },
+ {
+  "dep": {
+   "iata": "ZRH",
+   "time": "2026-12-15T08:15:00Z"
+  },
+  "arr": {
+   "iata": "FCO",
+   "time": "2026-12-15T09:50:00Z"
+  },
+  "durationMinutes": 95
+ }
+]
