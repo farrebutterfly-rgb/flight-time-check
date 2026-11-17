@@ -192,7 +192,7 @@ The answer varies from run to run. Routes inside one time zone are where it fail
 | `screenshots/searches/` | ChatGPT and website for each search, `rNN_chat.jpg` and `rNN_web.jpg` |
 | `screenshots/ab/` | The A/B trials: A and C with `Z`, B and D with the offset, E the stopgap |
 | `SEARCHES.md` | Every search with its class and both screenshots |
-| `report/Flight_time_check.html` | The full report as one page. Download it and open it in a browser |
+| [Release v1.0](https://github.com/farrebutterfly-rgb/flight-time-check/releases/tag/v1.0) | The full report as one HTML page, `Flight_time_check_report.html`. Download it and open it in a browser |
 
 ## Limits
 
