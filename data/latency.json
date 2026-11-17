@@ -1,0 +1,12 @@
+{
+ "note": "Seconds of work reported by ChatGPT in its own interface ('worked for N s') on the answers where it was read, 17 Nov 2026. Not wall-clock time and not a latency measurement.",
+ "worked_seconds": {
+  "8": 3,
+  "13": 4,
+  "22": 8,
+  "23": 12,
+  "26": 6,
+  "27": 9
+ },
+ "repeat_runs": "see repeat.json: wall-clock per answer for ten repeats of search 24"
+}

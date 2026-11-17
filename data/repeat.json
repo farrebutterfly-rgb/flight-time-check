@@ -1,0 +1,85 @@
+{
+ "note": "Ten repeats of search 24 (Stockholm Arlanda to Gothenburg, 15 Dec 2026, same prompt, new chat each time), run 17 Nov 2026 after the 27 searches. wall_ms is from sending the prompt to the finished answer in the browser, polled every 0.4 s, and includes the app permission prompt. worked_s is ChatGPT's own 'worked for' figure. Truth from the website: SK 171 departs 22:15.",
+ "runs": [
+  {
+   "run": 1,
+   "wall_ms": 43626,
+   "worked_s": 9,
+   "sk171_shown": "23:15 to 00:15 next day",
+   "result": "wrong",
+   "detail": "presented as Swedish local time"
+  },
+  {
+   "run": 2,
+   "wall_ms": 40003,
+   "worked_s": 8,
+   "sk171_shown": "23:15 to 00:15 next day",
+   "result": "wrong",
+   "detail": "presented as Swedish local time"
+  },
+  {
+   "run": 3,
+   "wall_ms": 88003,
+   "worked_s": 51,
+   "sk171_shown": "22:15 to 23:15",
+   "result": "right",
+   "detail": "model searched the web and overrode the UTC marker"
+  },
+  {
+   "run": 4,
+   "wall_ms": null,
+   "worked_s": null,
+   "sk171_shown": null,
+   "result": "error",
+   "detail": "ChatGPT error: Invalid conversation body, no answer"
+  },
+  {
+   "run": 5,
+   "wall_ms": 42003,
+   "worked_s": 9,
+   "sk171_shown": "23:15 to 00:15 next day",
+   "result": "wrong",
+   "detail": "presented as Swedish local time"
+  },
+  {
+   "run": 6,
+   "wall_ms": 44001,
+   "worked_s": 12,
+   "sk171_shown": "23:15 to 00:15 next day",
+   "result": "wrong",
+   "detail": "presented as Swedish local time"
+  },
+  {
+   "run": 7,
+   "wall_ms": 39210,
+   "worked_s": 7,
+   "sk171_shown": "23:15 to 00:15 next day",
+   "result": "wrong",
+   "detail": "presented as Swedish local time"
+  },
+  {
+   "run": 8,
+   "wall_ms": 42903,
+   "worked_s": 11,
+   "sk171_shown": "23:15 to 00:15 next day",
+   "result": "wrong",
+   "detail": "presented as Swedish local time"
+  },
+  {
+   "run": 9,
+   "wall_ms": 40802,
+   "worked_s": 8,
+   "sk171_shown": "23:15 to 00:15 next day",
+   "result": "wrong",
+   "detail": "presented as Swedish local time"
+  },
+  {
+   "run": 10,
+   "wall_ms": 44813,
+   "worked_s": 10,
+   "sk171_shown": "23:15 to 00:15 next day",
+   "result": "wrong",
+   "detail": "presented as Swedish local time"
+  }
+ ]
+}

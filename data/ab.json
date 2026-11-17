@@ -1,0 +1,217 @@
+{
+ "date": "2026-11-17",
+ "model": "ChatGPT, GPT-6.1 Sol, Medium, one new chat per trial",
+ "prompt": "A flight search tool returned this for <city> to <city> on 15 December 2026. List the flights for me with flight number, departure time, arrival time and duration. Tool result: <payload>",
+ "truth": [
+  [
+   "LX 1726",
+   "07:10",
+   "08:40"
+  ],
+  [
+   "U2 2970",
+   "08:15",
+   "09:50"
+  ],
+  [
+   "LX 1736",
+   "12:25",
+   "14:00"
+  ]
+ ],
+ "arms": {
+  "A": {
+   "label": "As returned today: local time with Z",
+   "example": "2026-12-15T07:10:00Z",
+   "trials": [
+    {
+     "shown": [
+      "08:10",
+      "09:40"
+     ],
+     "note": "The times are shown in local time (CET, UTC+1) at both airports.",
+     "right": false
+    },
+    {
+     "shown": [
+      "08:10",
+      "09:40"
+     ],
+     "note": "The search result used UTC. Both airports are on Central European Time (UTC+1) on that date.",
+     "right": false
+    },
+    {
+     "shown": [
+      "08:10",
+      "09:40"
+     ],
+     "note": "Departure and arrival times are shown in local time (CET, UTC+1).",
+     "right": false
+    },
+    {
+     "shown": [
+      "08:10",
+      "09:40"
+     ],
+     "note": "The tool's timestamps are in UTC. Zurich and Rome are both on CET (UTC+1) on that date.",
+     "right": false
+    },
+    {
+     "shown": [
+      "08:10",
+      "09:40"
+     ],
+     "note": "Times are shown in local time for both airports (CET, UTC+1).",
+     "right": false
+    }
+   ],
+   "route": "ZRH-FCO"
+  },
+  "B": {
+   "label": "Proposed: local time with the airport's offset",
+   "example": "2026-12-15T07:10:00+01:00",
+   "trials": [
+    {
+     "shown": [
+      "07:10",
+      "08:40"
+     ],
+     "note": "All times are local (CET).",
+     "right": true
+    },
+    {
+     "shown": [
+      "07:10",
+      "08:40"
+     ],
+     "note": "All times are local (CET, UTC+1).",
+     "right": true
+    },
+    {
+     "shown": [
+      "07:10",
+      "08:40"
+     ],
+     "note": "All times are local (CET, UTC+1).",
+     "right": true
+    },
+    {
+     "shown": [
+      "07:10",
+      "08:40"
+     ],
+     "note": "All times are local (CET, UTC+01:00).",
+     "right": true
+    },
+    {
+     "shown": [
+      "07:10",
+      "08:40"
+     ],
+     "note": "All times are local (CET, UTC+1).",
+     "right": true
+    }
+   ],
+   "route": "ZRH-FCO"
+  },
+  "C": {
+   "label": "As returned today: local time with Z",
+   "route": "LHR-ARN",
+   "example": "2026-12-15T06:40:00Z / 10:05:00Z",
+   "trials": [
+    {
+     "shown": [
+      "06:40",
+      "10:05"
+     ],
+     "note": "Columns headed Departure (UTC), Arrival (UTC). The tool marks all timestamps as UTC, but the elapsed time between each pair is one hour longer than the reported duration. The durations would match if the arrival times shown were Stockholm local times.",
+     "right": false,
+     "kind": "utc_label"
+    },
+    {
+     "shown": [
+      "06:40",
+      "10:05"
+     ],
+     "note": "Columns headed Departure (UTC), Arrival (UTC). The tool labels both times as UTC, but each reported duration is one hour shorter than the timestamps imply. The durations match if the arrival times are read as Stockholm local time (UTC+1).",
+     "right": false,
+     "kind": "utc_label"
+    },
+    {
+     "shown": [
+      "06:40",
+      "11:05"
+     ],
+     "note": "The tool labels all timestamps as UTC. Converting them to local airport times gives the table above, but the timestamps imply a flight time one hour longer than the reported duration for every flight. The intended arrival times are therefore uncertain.",
+     "right": false,
+     "kind": "shifted"
+    }
+   ]
+  },
+  "D": {
+   "label": "Proposed: local time with the airport's offset",
+   "route": "LHR-ARN",
+   "example": "2026-12-15T06:40:00+00:00 / 10:05:00+01:00",
+   "trials": [
+    {
+     "shown": [
+      "06:40",
+      "10:05"
+     ],
+     "note": "Columns headed London local time, Stockholm local time. No caveat.",
+     "right": true
+    },
+    {
+     "shown": [
+      "06:40",
+      "10:05"
+     ],
+     "note": "Columns headed London time, UTC+0 and Stockholm time, UTC+1. No caveat.",
+     "right": true
+    },
+    {
+     "shown": [
+      "06:40",
+      "10:05"
+     ],
+     "note": "Columns headed London local time, Stockholm local time. No caveat.",
+     "right": true
+    }
+   ]
+  },
+  "E": {
+   "label": "Stopgap: Z kept, one sentence added: the tool's description says dep.time and arr.time are local airport times",
+   "route": "ZRH-FCO",
+   "example": "2026-12-15T07:10:00Z + description",
+   "trials": [
+    {
+     "shown": [
+      "07:10",
+      "08:40"
+     ],
+     "note": "The table uses the clock times as returned, following the tool's description that they are local airport times. The timestamps also carry a Z suffix, which normally denotes UTC.",
+     "right": true,
+     "caveat": true
+    },
+    {
+     "shown": [
+      "07:10",
+      "08:40"
+     ],
+     "note": "I've shown the times as local airport times, following the tool's description. The timestamps carry a Z suffix, which normally indicates UTC, so the two conventions conflict.",
+     "right": true,
+     "caveat": true
+    },
+    {
+     "shown": [
+      "07:10",
+      "08:40"
+     ],
+     "note": "I've shown the clock times as local, following the tool's description. The timestamps carry a Z suffix, which normally indicates UTC.",
+     "right": true,
+     "caveat": true
+    }
+   ]
+  }
+ }
+}

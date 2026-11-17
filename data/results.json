@@ -1,0 +1,4150 @@
+[
+ {
+  "n": 1,
+  "frm": "ARN",
+  "to": "LGW",
+  "off_from": 1,
+  "off_to": 0,
+  "note": "Times are local to each airport.",
+  "chat": [
+   [
+    "D8 4451",
+    "08:00",
+    "08:35",
+    "2 h 35 min",
+    "443 SEK"
+   ],
+   [
+    "D8 4455",
+    "11:45",
+    "12:20",
+    "2 h 35 min",
+    "393 SEK"
+   ],
+   [
+    "D8 4457",
+    "15:45",
+    "16:20",
+    "2 h 35 min",
+    "393 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "07:00",
+    "08:35",
+    "2h 35min",
+    "443 SEK"
+   ],
+   [
+    "10:45",
+    "12:20",
+    "2h 35min",
+    "393 SEK"
+   ],
+   [
+    "14:45",
+    "16:20",
+    "2h 35min",
+    "393 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "D8 4451",
+    "dep": "08:00",
+    "arr": "08:35",
+    "dur": "2 h 35 min",
+    "fare": "443 SEK",
+    "web": [
+     "07:00",
+     "08:35",
+     "2h 35min",
+     "443 SEK"
+    ],
+    "sd": 60,
+    "sa": 0
+   },
+   {
+    "fn": "D8 4455",
+    "dep": "11:45",
+    "arr": "12:20",
+    "dur": "2 h 35 min",
+    "fare": "393 SEK",
+    "web": [
+     "10:45",
+     "12:20",
+     "2h 35min",
+     "393 SEK"
+    ],
+    "sd": 60,
+    "sa": 0
+   },
+   {
+    "fn": "D8 4457",
+    "dep": "15:45",
+    "arr": "16:20",
+    "dur": "2 h 35 min",
+    "fare": "393 SEK",
+    "web": [
+     "14:45",
+     "16:20",
+     "2h 35min",
+     "393 SEK"
+    ],
+    "sd": 60,
+    "sa": 0
+   }
+  ],
+  "matched": 3,
+  "listed": 3,
+  "shifted_rows": 3,
+  "mentions_utc": false,
+  "zone": "cross",
+  "cls": "shifted",
+  "shift": [
+   60,
+   0
+  ]
+ },
+ {
+  "n": 2,
+  "frm": "ARN",
+  "to": "CPH",
+  "off_from": 1,
+  "off_to": 1,
+  "note": "Times are shown in local time (CET), converted from the UTC timestamps returned by Flight Network.",
+  "chat": [
+   [
+    "D8 4151",
+    "08:00",
+    "09:10",
+    "1 h 10 min",
+    "571 SEK"
+   ],
+   [
+    "D8 3195",
+    "09:50",
+    "11:00",
+    "1 h 10 min",
+    "571 SEK"
+   ],
+   [
+    "D8 4167",
+    "18:15",
+    "19:25",
+    "1 h 10 min",
+    "571 SEK"
+   ],
+   [
+    "D8 3213",
+    "19:45",
+    "20:55",
+    "1 h 10 min",
+    "571 SEK"
+   ],
+   [
+    "SK 1427",
+    "22:00",
+    "23:15",
+    "1 h 15 min",
+    "651 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "07:00",
+    "08:10",
+    "1h 10min",
+    "569 SEK"
+   ],
+   [
+    "08:50",
+    "10:00",
+    "1h 10min",
+    "569 SEK"
+   ],
+   [
+    "17:15",
+    "18:25",
+    "1h 10min",
+    "569 SEK"
+   ],
+   [
+    "18:45",
+    "19:55",
+    "1h 10min",
+    "569 SEK"
+   ],
+   [
+    "21:00",
+    "22:15",
+    "1h 15min",
+    "651 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "D8 4151",
+    "dep": "08:00",
+    "arr": "09:10",
+    "dur": "1 h 10 min",
+    "fare": "571 SEK",
+    "web": [
+     "07:00",
+     "08:10",
+     "1h 10min",
+     "569 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   },
+   {
+    "fn": "D8 3195",
+    "dep": "09:50",
+    "arr": "11:00",
+    "dur": "1 h 10 min",
+    "fare": "571 SEK",
+    "web": [
+     "08:50",
+     "10:00",
+     "1h 10min",
+     "569 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   },
+   {
+    "fn": "D8 4167",
+    "dep": "18:15",
+    "arr": "19:25",
+    "dur": "1 h 10 min",
+    "fare": "571 SEK",
+    "web": [
+     "17:15",
+     "18:25",
+     "1h 10min",
+     "569 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   },
+   {
+    "fn": "D8 3213",
+    "dep": "19:45",
+    "arr": "20:55",
+    "dur": "1 h 10 min",
+    "fare": "571 SEK",
+    "web": [
+     "18:45",
+     "19:55",
+     "1h 10min",
+     "569 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   },
+   {
+    "fn": "SK 1427",
+    "dep": "22:00",
+    "arr": "23:15",
+    "dur": "1 h 15 min",
+    "fare": "651 SEK",
+    "web": [
+     "21:00",
+     "22:15",
+     "1h 15min",
+     "651 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   }
+  ],
+  "matched": 5,
+  "listed": 5,
+  "shifted_rows": 5,
+  "mentions_utc": true,
+  "zone": "same",
+  "cls": "shifted",
+  "shift": [
+   60,
+   60
+  ]
+ },
+ {
+  "n": 3,
+  "frm": "ARN",
+  "to": "HEL",
+  "off_from": 1,
+  "off_to": 2,
+  "note": "I've shown the clock times as returned. Flight Network marks both time fields as UTC, but the two-hour difference matches its listed one-hour duration if the times are local, with Helsinki one hour ahead of Stockholm.",
+  "chat": [
+   [
+    "AY 826",
+    "06:35",
+    "08:35",
+    "1h",
+    "455 SEK"
+   ],
+   [
+    "D8 2603",
+    "08:05",
+    "10:05",
+    "1h",
+    "443 SEK"
+   ],
+   [
+    "SK 708",
+    "12:50",
+    "14:50",
+    "1h",
+    "510 SEK"
+   ],
+   [
+    "D8 2613",
+    "17:20",
+    "19:20",
+    "1h",
+    "482 SEK"
+   ],
+   [
+    "D8 2615",
+    "20:25",
+    "22:25",
+    "1h",
+    "443 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "20:25",
+    "22:25",
+    "1h",
+    "443 SEK"
+   ],
+   [
+    "06:35",
+    "08:35",
+    "1h",
+    "455 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "AY 826",
+    "dep": "06:35",
+    "arr": "08:35",
+    "dur": "1h",
+    "fare": "455 SEK",
+    "web": [
+     "06:35",
+     "08:35",
+     "1h",
+     "455 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "D8 2603",
+    "dep": "08:05",
+    "arr": "10:05",
+    "dur": "1h",
+    "fare": "443 SEK",
+    "web": null,
+    "sd": null,
+    "sa": null
+   },
+   {
+    "fn": "SK 708",
+    "dep": "12:50",
+    "arr": "14:50",
+    "dur": "1h",
+    "fare": "510 SEK",
+    "web": null,
+    "sd": null,
+    "sa": null
+   },
+   {
+    "fn": "D8 2613",
+    "dep": "17:20",
+    "arr": "19:20",
+    "dur": "1h",
+    "fare": "482 SEK",
+    "web": null,
+    "sd": null,
+    "sa": null
+   },
+   {
+    "fn": "D8 2615",
+    "dep": "20:25",
+    "arr": "22:25",
+    "dur": "1h",
+    "fare": "443 SEK",
+    "web": [
+     "20:25",
+     "22:25",
+     "1h",
+     "443 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   }
+  ],
+  "matched": 2,
+  "listed": 5,
+  "shifted_rows": 0,
+  "mentions_utc": true,
+  "zone": "cross",
+  "cls": "rescued"
+ },
+ {
+  "n": 4,
+  "frm": "LHR",
+  "to": "EDI",
+  "off_from": 0,
+  "off_to": 0,
+  "note": "Times are local to the UK (GMT).",
+  "chat": [
+   [
+    "BA 1442",
+    "08:40",
+    "10:10",
+    "1 h 30 min",
+    "1413 SEK"
+   ],
+   [
+    "BA 1448",
+    "11:45",
+    "13:15",
+    "1 h 30 min",
+    "1088 SEK"
+   ],
+   [
+    "BA 1452",
+    "13:45",
+    "15:15",
+    "1 h 30 min",
+    "1401 SEK"
+   ],
+   [
+    "BA 1454",
+    "16:00",
+    "17:30",
+    "1 h 30 min",
+    "1015 SEK"
+   ],
+   [
+    "BA 1456",
+    "16:55",
+    "18:25",
+    "1 h 30 min",
+    "1525 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "06:25",
+    "07:50",
+    "1h 25min",
+    "1654 SEK"
+   ],
+   [
+    "16:00",
+    "17:30",
+    "1h 30min",
+    "1015 SEK"
+   ],
+   [
+    "11:45",
+    "13:15",
+    "1h 30min",
+    "1088 SEK"
+   ],
+   [
+    "13:45",
+    "15:15",
+    "1h 30min",
+    "1401 SEK"
+   ],
+   [
+    "08:40",
+    "10:10",
+    "1h 30min",
+    "1413 SEK"
+   ],
+   [
+    "16:55",
+    "18:25",
+    "1h 30min",
+    "1525 SEK"
+   ],
+   [
+    "07:45",
+    "09:10",
+    "1h 25min",
+    "1654 SEK"
+   ],
+   [
+    "18:05",
+    "19:30",
+    "1h 25min",
+    "1654 SEK"
+   ],
+   [
+    "19:15",
+    "20:40",
+    "1h 25min",
+    "1654 SEK"
+   ],
+   [
+    "19:55",
+    "21:20",
+    "1h 25min",
+    "1654 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "BA 1442",
+    "dep": "08:40",
+    "arr": "10:10",
+    "dur": "1 h 30 min",
+    "fare": "1413 SEK",
+    "web": [
+     "08:40",
+     "10:10",
+     "1h 30min",
+     "1413 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "BA 1448",
+    "dep": "11:45",
+    "arr": "13:15",
+    "dur": "1 h 30 min",
+    "fare": "1088 SEK",
+    "web": [
+     "11:45",
+     "13:15",
+     "1h 30min",
+     "1088 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "BA 1452",
+    "dep": "13:45",
+    "arr": "15:15",
+    "dur": "1 h 30 min",
+    "fare": "1401 SEK",
+    "web": [
+     "13:45",
+     "15:15",
+     "1h 30min",
+     "1401 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "BA 1454",
+    "dep": "16:00",
+    "arr": "17:30",
+    "dur": "1 h 30 min",
+    "fare": "1015 SEK",
+    "web": [
+     "16:00",
+     "17:30",
+     "1h 30min",
+     "1015 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "BA 1456",
+    "dep": "16:55",
+    "arr": "18:25",
+    "dur": "1 h 30 min",
+    "fare": "1525 SEK",
+    "web": [
+     "16:55",
+     "18:25",
+     "1h 30min",
+     "1525 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   }
+  ],
+  "matched": 5,
+  "listed": 5,
+  "shifted_rows": 0,
+  "mentions_utc": false,
+  "zone": "utc0",
+  "cls": "ok"
+ },
+ {
+  "n": 5,
+  "frm": "LIS",
+  "to": "LHR",
+  "off_from": 0,
+  "off_to": 0,
+  "note": "All times are local (UTC+0 at both airports).",
+  "chat": [
+   [
+    "BA 513",
+    "07:05",
+    "10:05",
+    "3 h 00 min",
+    "952 SEK"
+   ],
+   [
+    "BA 503",
+    "10:40",
+    "13:35",
+    "2 h 55 min",
+    "952 SEK"
+   ],
+   [
+    "BA 505",
+    "12:55",
+    "15:50",
+    "2 h 55 min",
+    "952 SEK"
+   ],
+   [
+    "TP 1358",
+    "18:45",
+    "21:35",
+    "2 h 50 min",
+    "994 SEK"
+   ],
+   [
+    "BA 511",
+    "19:45",
+    "22:30",
+    "2 h 45 min",
+    "952 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "19:45",
+    "22:30",
+    "2h 45min",
+    "952 SEK"
+   ],
+   [
+    "10:40",
+    "13:35",
+    "2h 55min",
+    "952 SEK"
+   ],
+   [
+    "12:55",
+    "15:50",
+    "2h 55min",
+    "952 SEK"
+   ],
+   [
+    "07:05",
+    "10:05",
+    "3h",
+    "952 SEK"
+   ],
+   [
+    "18:45",
+    "21:35",
+    "2h 50min",
+    "994 SEK"
+   ],
+   [
+    "19:50",
+    "22:40",
+    "2h 50min",
+    "1133 SEK"
+   ],
+   [
+    "16:00",
+    "18:50",
+    "2h 50min",
+    "1289 SEK"
+   ],
+   [
+    "14:40",
+    "17:30",
+    "2h 50min",
+    "1541 SEK"
+   ],
+   [
+    "09:50",
+    "12:40",
+    "2h 50min",
+    "1582 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "BA 513",
+    "dep": "07:05",
+    "arr": "10:05",
+    "dur": "3 h 00 min",
+    "fare": "952 SEK",
+    "web": [
+     "07:05",
+     "10:05",
+     "3h",
+     "952 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "BA 503",
+    "dep": "10:40",
+    "arr": "13:35",
+    "dur": "2 h 55 min",
+    "fare": "952 SEK",
+    "web": [
+     "10:40",
+     "13:35",
+     "2h 55min",
+     "952 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "BA 505",
+    "dep": "12:55",
+    "arr": "15:50",
+    "dur": "2 h 55 min",
+    "fare": "952 SEK",
+    "web": [
+     "12:55",
+     "15:50",
+     "2h 55min",
+     "952 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "TP 1358",
+    "dep": "18:45",
+    "arr": "21:35",
+    "dur": "2 h 50 min",
+    "fare": "994 SEK",
+    "web": [
+     "18:45",
+     "21:35",
+     "2h 50min",
+     "994 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "BA 511",
+    "dep": "19:45",
+    "arr": "22:30",
+    "dur": "2 h 45 min",
+    "fare": "952 SEK",
+    "web": [
+     "19:45",
+     "22:30",
+     "2h 45min",
+     "952 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   }
+  ],
+  "matched": 5,
+  "listed": 5,
+  "shifted_rows": 0,
+  "mentions_utc": false,
+  "zone": "utc0",
+  "cls": "ok"
+ },
+ {
+  "n": 6,
+  "frm": "LHR",
+  "to": "ARN",
+  "off_from": 0,
+  "off_to": 1,
+  "note": "Flight Network tagged both timestamps as UTC. I've shown the clock times as local because all five listed durations reconcile when Stockholm is one hour ahead of London.",
+  "chat": [
+   [
+    "SK 1530",
+    "06:40",
+    "10:05",
+    "2 h 25 min",
+    "1030 SEK"
+   ],
+   [
+    "SK 526",
+    "09:55",
+    "13:20",
+    "2 h 25 min",
+    "1477 SEK"
+   ],
+   [
+    "SK 532",
+    "13:55",
+    "17:25",
+    "2 h 30 min",
+    "1477 SEK"
+   ],
+   [
+    "BA 782",
+    "15:55",
+    "19:35",
+    "2 h 40 min",
+    "945 SEK"
+   ],
+   [
+    "BA 784",
+    "19:15",
+    "22:50",
+    "2 h 35 min",
+    "1218 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "15:55",
+    "19:35",
+    "2h 40min",
+    "945 SEK"
+   ],
+   [
+    "06:40",
+    "10:05",
+    "2h 25min",
+    "1030 SEK"
+   ],
+   [
+    "19:15",
+    "22:50",
+    "2h 35min",
+    "1218 SEK"
+   ],
+   [
+    "09:55",
+    "13:20",
+    "2h 25min",
+    "1477 SEK"
+   ],
+   [
+    "13:55",
+    "17:25",
+    "2h 30min",
+    "1477 SEK"
+   ],
+   [
+    "12:50",
+    "16:25",
+    "2h 35min",
+    "1601 SEK"
+   ],
+   [
+    "18:05",
+    "21:30",
+    "2h 25min",
+    "1670 SEK"
+   ],
+   [
+    "07:20",
+    "10:55",
+    "2h 35min",
+    "1748 SEK"
+   ],
+   [
+    "11:05",
+    "14:40",
+    "2h 35min",
+    "1993 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "SK 1530",
+    "dep": "06:40",
+    "arr": "10:05",
+    "dur": "2 h 25 min",
+    "fare": "1030 SEK",
+    "web": [
+     "06:40",
+     "10:05",
+     "2h 25min",
+     "1030 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "SK 526",
+    "dep": "09:55",
+    "arr": "13:20",
+    "dur": "2 h 25 min",
+    "fare": "1477 SEK",
+    "web": [
+     "09:55",
+     "13:20",
+     "2h 25min",
+     "1477 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "SK 532",
+    "dep": "13:55",
+    "arr": "17:25",
+    "dur": "2 h 30 min",
+    "fare": "1477 SEK",
+    "web": [
+     "13:55",
+     "17:25",
+     "2h 30min",
+     "1477 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "BA 782",
+    "dep": "15:55",
+    "arr": "19:35",
+    "dur": "2 h 40 min",
+    "fare": "945 SEK",
+    "web": [
+     "15:55",
+     "19:35",
+     "2h 40min",
+     "945 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "BA 784",
+    "dep": "19:15",
+    "arr": "22:50",
+    "dur": "2 h 35 min",
+    "fare": "1218 SEK",
+    "web": [
+     "19:15",
+     "22:50",
+     "2h 35min",
+     "1218 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   }
+  ],
+  "matched": 5,
+  "listed": 5,
+  "shifted_rows": 0,
+  "mentions_utc": true,
+  "zone": "cross",
+  "cls": "rescued"
+ },
+ {
+  "n": 7,
+  "frm": "CDG",
+  "to": "MAD",
+  "off_from": 1,
+  "off_to": 1,
+  "note": "All times are local (CET).",
+  "chat": [
+   [
+    "IB 592",
+    "07:50",
+    "10:05",
+    "2 h 15 min",
+    "859 SEK"
+   ],
+   [
+    "IB 586",
+    "13:40",
+    "15:55",
+    "2 h 15 min",
+    "859 SEK"
+   ],
+   [
+    "IB 574",
+    "15:25",
+    "17:35",
+    "2 h 10 min",
+    "859 SEK"
+   ],
+   [
+    "IB 578",
+    "18:20",
+    "20:30",
+    "2 h 10 min",
+    "859 SEK"
+   ],
+   [
+    "IB 590",
+    "19:45",
+    "21:55",
+    "2 h 10 min",
+    "859 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "14:25",
+    "16:35",
+    "2h 10min",
+    "859 SEK"
+   ],
+   [
+    "17:20",
+    "19:30",
+    "2h 10min",
+    "859 SEK"
+   ],
+   [
+    "18:45",
+    "20:55",
+    "2h 10min",
+    "859 SEK"
+   ],
+   [
+    "06:50",
+    "09:05",
+    "2h 15min",
+    "859 SEK"
+   ],
+   [
+    "12:40",
+    "14:55",
+    "2h 15min",
+    "859 SEK"
+   ],
+   [
+    "10:20",
+    "12:30",
+    "2h 10min",
+    "959 SEK"
+   ],
+   [
+    "13:10",
+    "15:20",
+    "2h 10min",
+    "1132 SEK"
+   ],
+   [
+    "15:35",
+    "17:45",
+    "2h 10min",
+    "1132 SEK"
+   ],
+   [
+    "20:55",
+    "23:05",
+    "2h 10min",
+    "1132 SEK"
+   ],
+   [
+    "06:55",
+    "09:10",
+    "2h 15min",
+    "1132 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "IB 592",
+    "dep": "07:50",
+    "arr": "10:05",
+    "dur": "2 h 15 min",
+    "fare": "859 SEK",
+    "web": [
+     "06:50",
+     "09:05",
+     "2h 15min",
+     "859 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   },
+   {
+    "fn": "IB 586",
+    "dep": "13:40",
+    "arr": "15:55",
+    "dur": "2 h 15 min",
+    "fare": "859 SEK",
+    "web": [
+     "12:40",
+     "14:55",
+     "2h 15min",
+     "859 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   },
+   {
+    "fn": "IB 574",
+    "dep": "15:25",
+    "arr": "17:35",
+    "dur": "2 h 10 min",
+    "fare": "859 SEK",
+    "web": [
+     "14:25",
+     "16:35",
+     "2h 10min",
+     "859 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   },
+   {
+    "fn": "IB 578",
+    "dep": "18:20",
+    "arr": "20:30",
+    "dur": "2 h 10 min",
+    "fare": "859 SEK",
+    "web": [
+     "17:20",
+     "19:30",
+     "2h 10min",
+     "859 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   },
+   {
+    "fn": "IB 590",
+    "dep": "19:45",
+    "arr": "21:55",
+    "dur": "2 h 10 min",
+    "fare": "859 SEK",
+    "web": [
+     "18:45",
+     "20:55",
+     "2h 10min",
+     "859 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   }
+  ],
+  "matched": 5,
+  "listed": 5,
+  "shifted_rows": 5,
+  "mentions_utc": false,
+  "zone": "same",
+  "cls": "shifted",
+  "shift": [
+   60,
+   60
+  ]
+ },
+ {
+  "n": 8,
+  "frm": "AMS",
+  "to": "BCN",
+  "off_from": 1,
+  "off_to": 1,
+  "note": "Column headers: Departure (UTC), Arrival (UTC). The table uses the UTC time labels returned by Flight Network and fares for the Swedish market.",
+  "chat": [
+   [
+    "HV 5131",
+    "07:00",
+    "09:15",
+    "2h 15m",
+    "840 SEK"
+   ],
+   [
+    "VY 1051",
+    "07:00",
+    "09:20",
+    "2h 20m",
+    "847 SEK"
+   ],
+   [
+    "KL 1511",
+    "08:20",
+    "10:25",
+    "2h 05m",
+    "1198 SEK"
+   ],
+   [
+    "KL 1513",
+    "10:05",
+    "12:15",
+    "2h 10m",
+    "1198 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "08:20",
+    "10:25",
+    "2h 5min",
+    "1198 SEK"
+   ],
+   [
+    "07:00",
+    "09:15",
+    "2h 15min",
+    "840 SEK"
+   ],
+   [
+    "07:00",
+    "09:20",
+    "2h 20min",
+    "847 SEK"
+   ],
+   [
+    "10:05",
+    "12:15",
+    "2h 10min",
+    "1198 SEK"
+   ],
+   [
+    "13:25",
+    "15:45",
+    "2h 20min",
+    "1227 SEK"
+   ],
+   [
+    "14:25",
+    "16:30",
+    "2h 5min",
+    "1286 SEK"
+   ],
+   [
+    "19:05",
+    "21:25",
+    "2h 20min",
+    "1416 SEK"
+   ],
+   [
+    "16:50",
+    "19:00",
+    "2h 10min",
+    "1725 SEK"
+   ],
+   [
+    "20:50",
+    "23:05",
+    "2h 15min",
+    "1725 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "HV 5131",
+    "dep": "07:00",
+    "arr": "09:15",
+    "dur": "2h 15m",
+    "fare": "840 SEK",
+    "web": [
+     "07:00",
+     "09:15",
+     "2h 15min",
+     "840 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "VY 1051",
+    "dep": "07:00",
+    "arr": "09:20",
+    "dur": "2h 20m",
+    "fare": "847 SEK",
+    "web": [
+     "07:00",
+     "09:20",
+     "2h 20min",
+     "847 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "KL 1511",
+    "dep": "08:20",
+    "arr": "10:25",
+    "dur": "2h 05m",
+    "fare": "1198 SEK",
+    "web": [
+     "08:20",
+     "10:25",
+     "2h 5min",
+     "1198 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "KL 1513",
+    "dep": "10:05",
+    "arr": "12:15",
+    "dur": "2h 10m",
+    "fare": "1198 SEK",
+    "web": [
+     "10:05",
+     "12:15",
+     "2h 10min",
+     "1198 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   }
+  ],
+  "matched": 4,
+  "listed": 4,
+  "shifted_rows": 0,
+  "mentions_utc": true,
+  "zone": "same",
+  "cls": "utc_label"
+ },
+ {
+  "n": 9,
+  "frm": "FRA",
+  "to": "IST",
+  "off_from": 1,
+  "off_to": 3,
+  "note": "VOID: Flight Network returned no nonstop flights to IST, all five nonstop offers land at SAW. No times to compare.",
+  "chat": [],
+  "web": [],
+  "cls": "void"
+ },
+ {
+  "n": 10,
+  "frm": "HEL",
+  "to": "ARN",
+  "off_from": 2,
+  "off_to": 1,
+  "note": "I've displayed the clock times as local to each airport. Flight Network tags both time fields as UTC, but the listed durations reconcile when the times are read locally, with Helsinki one hour ahead of Stockholm.",
+  "chat": [
+   [
+    "D8 2602",
+    "07:20",
+    "07:30",
+    "1 h 10 min",
+    "514 SEK"
+   ],
+   [
+    "SK 709",
+    "15:30",
+    "15:35",
+    "1 h 05 min",
+    "503 SEK"
+   ],
+   [
+    "D8 2612",
+    "16:40",
+    "16:40",
+    "1 h",
+    "514 SEK"
+   ],
+   [
+    "D8 2614",
+    "19:50",
+    "19:50",
+    "1 h",
+    "514 SEK"
+   ],
+   [
+    "AY 825",
+    "23:50",
+    "23:50",
+    "1 h",
+    "602 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "15:30",
+    "15:35",
+    "1h 5min",
+    "503 SEK"
+   ],
+   [
+    "16:40",
+    "16:40",
+    "1h",
+    "514 SEK"
+   ],
+   [
+    "19:50",
+    "19:50",
+    "1h",
+    "514 SEK"
+   ],
+   [
+    "07:20",
+    "07:30",
+    "1h 10min",
+    "514 SEK"
+   ],
+   [
+    "11:05",
+    "11:25",
+    "1h 20min",
+    "561 SEK"
+   ],
+   [
+    "23:50",
+    "23:50",
+    "1h",
+    "602 SEK"
+   ],
+   [
+    "07:00",
+    "07:15",
+    "1h 15min",
+    "610 SEK"
+   ],
+   [
+    "13:30",
+    "13:35",
+    "1h 5min",
+    "613 SEK"
+   ],
+   [
+    "12:25",
+    "12:30",
+    "1h 5min",
+    "761 SEK"
+   ],
+   [
+    "07:00",
+    "07:10",
+    "1h 10min",
+    "807 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "D8 2602",
+    "dep": "07:20",
+    "arr": "07:30",
+    "dur": "1 h 10 min",
+    "fare": "514 SEK",
+    "web": [
+     "07:20",
+     "07:30",
+     "1h 10min",
+     "514 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "SK 709",
+    "dep": "15:30",
+    "arr": "15:35",
+    "dur": "1 h 05 min",
+    "fare": "503 SEK",
+    "web": [
+     "15:30",
+     "15:35",
+     "1h 5min",
+     "503 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "D8 2612",
+    "dep": "16:40",
+    "arr": "16:40",
+    "dur": "1 h",
+    "fare": "514 SEK",
+    "web": [
+     "16:40",
+     "16:40",
+     "1h",
+     "514 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "D8 2614",
+    "dep": "19:50",
+    "arr": "19:50",
+    "dur": "1 h",
+    "fare": "514 SEK",
+    "web": [
+     "19:50",
+     "19:50",
+     "1h",
+     "514 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "AY 825",
+    "dep": "23:50",
+    "arr": "23:50",
+    "dur": "1 h",
+    "fare": "602 SEK",
+    "web": [
+     "23:50",
+     "23:50",
+     "1h",
+     "602 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   }
+  ],
+  "matched": 5,
+  "listed": 5,
+  "shifted_rows": 0,
+  "mentions_utc": true,
+  "zone": "cross",
+  "cls": "rescued"
+ },
+ {
+  "n": 11,
+  "frm": "ATH",
+  "to": "FCO",
+  "off_from": 2,
+  "off_to": 1,
+  "note": "Times are local to each airport. Flight Network's raw timestamps carried a Z marker, but the published schedules and flight durations support reading the clock times as local. (ChatGPT ran a web search to check.)",
+  "chat": [
+   [
+    "A3 650",
+    "08:35",
+    "09:40",
+    "2h 05m",
+    "774 SEK"
+   ],
+   [
+    "GQ 820",
+    "10:55",
+    "12:00",
+    "2h 05m",
+    "553 SEK"
+   ],
+   [
+    "AZ 719",
+    "12:45",
+    "13:55",
+    "2h 10m",
+    "714 SEK"
+   ],
+   [
+    "A3 654",
+    "16:25",
+    "17:35",
+    "2h 10m",
+    "593 SEK"
+   ],
+   [
+    "AZ 721",
+    "19:30",
+    "20:40",
+    "2h 10m",
+    "714 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "10:55",
+    "12:00",
+    "2h 5min",
+    "553 SEK"
+   ],
+   [
+    "16:25",
+    "17:35",
+    "2h 10min",
+    "593 SEK"
+   ],
+   [
+    "12:45",
+    "13:55",
+    "2h 10min",
+    "723 SEK"
+   ],
+   [
+    "19:30",
+    "20:40",
+    "2h 10min",
+    "723 SEK"
+   ],
+   [
+    "08:35",
+    "09:40",
+    "2h 5min",
+    "774 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "A3 650",
+    "dep": "08:35",
+    "arr": "09:40",
+    "dur": "2h 05m",
+    "fare": "774 SEK",
+    "web": [
+     "08:35",
+     "09:40",
+     "2h 5min",
+     "774 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "GQ 820",
+    "dep": "10:55",
+    "arr": "12:00",
+    "dur": "2h 05m",
+    "fare": "553 SEK",
+    "web": [
+     "10:55",
+     "12:00",
+     "2h 5min",
+     "553 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "AZ 719",
+    "dep": "12:45",
+    "arr": "13:55",
+    "dur": "2h 10m",
+    "fare": "714 SEK",
+    "web": [
+     "12:45",
+     "13:55",
+     "2h 10min",
+     "723 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "A3 654",
+    "dep": "16:25",
+    "arr": "17:35",
+    "dur": "2h 10m",
+    "fare": "593 SEK",
+    "web": [
+     "16:25",
+     "17:35",
+     "2h 10min",
+     "593 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "AZ 721",
+    "dep": "19:30",
+    "arr": "20:40",
+    "dur": "2h 10m",
+    "fare": "714 SEK",
+    "web": [
+     "19:30",
+     "20:40",
+     "2h 10min",
+     "723 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   }
+  ],
+  "matched": 5,
+  "listed": 5,
+  "shifted_rows": 0,
+  "mentions_utc": true,
+  "zone": "cross",
+  "cls": "rescued"
+ },
+ {
+  "n": 12,
+  "frm": "OSL",
+  "to": "CPH",
+  "off_from": 1,
+  "off_to": 1,
+  "note": "Fares are one-way for one adult, and times are local (CET).",
+  "chat": [
+   [
+    "DY 932",
+    "08:30",
+    "09:45",
+    "1 h 15 min",
+    "652 SEK"
+   ],
+   [
+    "D8 3221",
+    "10:05",
+    "11:20",
+    "1 h 15 min",
+    "656 SEK"
+   ],
+   [
+    "DY 940",
+    "14:55",
+    "16:10",
+    "1 h 15 min",
+    "652 SEK"
+   ],
+   [
+    "D8 3229",
+    "17:00",
+    "18:15",
+    "1 h 15 min",
+    "656 SEK"
+   ],
+   [
+    "DY 948",
+    "18:25",
+    "19:40",
+    "1 h 15 min",
+    "652 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "09:05",
+    "10:20",
+    "1h 15min",
+    "662 SEK"
+   ],
+   [
+    "17:25",
+    "18:40",
+    "1h 15min",
+    "671 SEK"
+   ],
+   [
+    "16:00",
+    "17:15",
+    "1h 15min",
+    "662 SEK"
+   ],
+   [
+    "18:45",
+    "20:00",
+    "1h 15min",
+    "662 SEK"
+   ],
+   [
+    "07:30",
+    "08:45",
+    "1h 15min",
+    "671 SEK"
+   ],
+   [
+    "13:55",
+    "15:10",
+    "1h 15min",
+    "671 SEK"
+   ],
+   [
+    "19:05",
+    "20:20",
+    "1h 15min",
+    "743 SEK"
+   ],
+   [
+    "05:55",
+    "07:15",
+    "1h 20min",
+    "743 SEK"
+   ],
+   [
+    "21:05",
+    "22:20",
+    "1h 15min",
+    "837 SEK"
+   ],
+   [
+    "08:00",
+    "09:20",
+    "1h 20min",
+    "839 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "DY 932",
+    "dep": "08:30",
+    "arr": "09:45",
+    "dur": "1 h 15 min",
+    "fare": "652 SEK",
+    "web": [
+     "07:30",
+     "08:45",
+     "1h 15min",
+     "671 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   },
+   {
+    "fn": "D8 3221",
+    "dep": "10:05",
+    "arr": "11:20",
+    "dur": "1 h 15 min",
+    "fare": "656 SEK",
+    "web": [
+     "09:05",
+     "10:20",
+     "1h 15min",
+     "662 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   },
+   {
+    "fn": "DY 940",
+    "dep": "14:55",
+    "arr": "16:10",
+    "dur": "1 h 15 min",
+    "fare": "652 SEK",
+    "web": [
+     "13:55",
+     "15:10",
+     "1h 15min",
+     "671 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   },
+   {
+    "fn": "D8 3229",
+    "dep": "17:00",
+    "arr": "18:15",
+    "dur": "1 h 15 min",
+    "fare": "656 SEK",
+    "web": [
+     "16:00",
+     "17:15",
+     "1h 15min",
+     "662 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   },
+   {
+    "fn": "DY 948",
+    "dep": "18:25",
+    "arr": "19:40",
+    "dur": "1 h 15 min",
+    "fare": "652 SEK",
+    "web": [
+     "17:25",
+     "18:40",
+     "1h 15min",
+     "671 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   }
+  ],
+  "matched": 5,
+  "listed": 5,
+  "shifted_rows": 5,
+  "mentions_utc": false,
+  "zone": "same",
+  "cls": "shifted",
+  "shift": [
+   60,
+   60
+  ]
+ },
+ {
+  "n": 13,
+  "frm": "GOT",
+  "to": "AMS",
+  "off_from": 1,
+  "off_to": 1,
+  "note": "The table shows the times as returned by Flight Network, which marks them Z (UTC).",
+  "chat": [
+   [
+    "KL 1228",
+    "06:00",
+    "07:35",
+    "1 h 35 min",
+    "1366 SEK"
+   ],
+   [
+    "KL 1230",
+    "10:05",
+    "11:40",
+    "1 h 35 min",
+    "1233 SEK"
+   ],
+   [
+    "KL 1232",
+    "12:00",
+    "13:30",
+    "1 h 30 min",
+    "1233 SEK"
+   ],
+   [
+    "KL 1234",
+    "14:35",
+    "16:10",
+    "1 h 35 min",
+    "1233 SEK"
+   ],
+   [
+    "KL 1236",
+    "17:20",
+    "18:55",
+    "1 h 35 min",
+    "1381 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "12:00",
+    "13:30",
+    "1h 30min",
+    "1233 SEK"
+   ],
+   [
+    "14:35",
+    "16:10",
+    "1h 35min",
+    "1233 SEK"
+   ],
+   [
+    "10:05",
+    "11:40",
+    "1h 35min",
+    "1233 SEK"
+   ],
+   [
+    "06:00",
+    "07:35",
+    "1h 35min",
+    "1366 SEK"
+   ],
+   [
+    "17:20",
+    "18:55",
+    "1h 35min",
+    "1381 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "KL 1228",
+    "dep": "06:00",
+    "arr": "07:35",
+    "dur": "1 h 35 min",
+    "fare": "1366 SEK",
+    "web": [
+     "06:00",
+     "07:35",
+     "1h 35min",
+     "1366 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "KL 1230",
+    "dep": "10:05",
+    "arr": "11:40",
+    "dur": "1 h 35 min",
+    "fare": "1233 SEK",
+    "web": [
+     "10:05",
+     "11:40",
+     "1h 35min",
+     "1233 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "KL 1232",
+    "dep": "12:00",
+    "arr": "13:30",
+    "dur": "1 h 30 min",
+    "fare": "1233 SEK",
+    "web": [
+     "12:00",
+     "13:30",
+     "1h 30min",
+     "1233 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "KL 1234",
+    "dep": "14:35",
+    "arr": "16:10",
+    "dur": "1 h 35 min",
+    "fare": "1233 SEK",
+    "web": [
+     "14:35",
+     "16:10",
+     "1h 35min",
+     "1233 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "KL 1236",
+    "dep": "17:20",
+    "arr": "18:55",
+    "dur": "1 h 35 min",
+    "fare": "1381 SEK",
+    "web": [
+     "17:20",
+     "18:55",
+     "1h 35min",
+     "1381 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   }
+  ],
+  "matched": 5,
+  "listed": 5,
+  "shifted_rows": 0,
+  "mentions_utc": true,
+  "zone": "same",
+  "cls": "utc_label"
+ },
+ {
+  "n": 14,
+  "frm": "MUC",
+  "to": "LHR",
+  "off_from": 1,
+  "off_to": 0,
+  "note": "Time zone discrepancy: Flight Network marks both times as UTC, which gives a one-hour interval. The reported two-hour duration matches the displayed times if departure is Munich local time and arrival is London local time. I've kept the times as returned.",
+  "chat": [
+   [
+    "LH 2472",
+    "09:25",
+    "10:25",
+    "2 h",
+    "1249 SEK"
+   ],
+   [
+    "LH 4194",
+    "12:00",
+    "13:00",
+    "2 h",
+    "1249 SEK"
+   ],
+   [
+    "LH 2476",
+    "14:50",
+    "15:50",
+    "2 h",
+    "1249 SEK"
+   ],
+   [
+    "LH 2478",
+    "16:05",
+    "17:05",
+    "2 h",
+    "1249 SEK"
+   ],
+   [
+    "LH 4198",
+    "17:30",
+    "18:30",
+    "2 h",
+    "1249 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "09:25",
+    "10:25",
+    "2h",
+    "1249 SEK"
+   ],
+   [
+    "17:30",
+    "18:30",
+    "2h",
+    "1249 SEK"
+   ],
+   [
+    "12:00",
+    "13:00",
+    "2h",
+    "1249 SEK"
+   ],
+   [
+    "14:50",
+    "15:50",
+    "2h",
+    "1249 SEK"
+   ],
+   [
+    "16:05",
+    "17:05",
+    "2h",
+    "1249 SEK"
+   ],
+   [
+    "18:35",
+    "19:35",
+    "2h",
+    "1249 SEK"
+   ],
+   [
+    "20:00",
+    "21:00",
+    "2h",
+    "1249 SEK"
+   ],
+   [
+    "21:55",
+    "22:55",
+    "2h",
+    "1249 SEK"
+   ],
+   [
+    "07:00",
+    "08:05",
+    "2h 5min",
+    "1249 SEK"
+   ],
+   [
+    "20:40",
+    "21:40",
+    "2h",
+    "1275 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "LH 2472",
+    "dep": "09:25",
+    "arr": "10:25",
+    "dur": "2 h",
+    "fare": "1249 SEK",
+    "web": [
+     "09:25",
+     "10:25",
+     "2h",
+     "1249 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "LH 4194",
+    "dep": "12:00",
+    "arr": "13:00",
+    "dur": "2 h",
+    "fare": "1249 SEK",
+    "web": [
+     "12:00",
+     "13:00",
+     "2h",
+     "1249 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "LH 2476",
+    "dep": "14:50",
+    "arr": "15:50",
+    "dur": "2 h",
+    "fare": "1249 SEK",
+    "web": [
+     "14:50",
+     "15:50",
+     "2h",
+     "1249 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "LH 2478",
+    "dep": "16:05",
+    "arr": "17:05",
+    "dur": "2 h",
+    "fare": "1249 SEK",
+    "web": [
+     "16:05",
+     "17:05",
+     "2h",
+     "1249 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "LH 4198",
+    "dep": "17:30",
+    "arr": "18:30",
+    "dur": "2 h",
+    "fare": "1249 SEK",
+    "web": [
+     "17:30",
+     "18:30",
+     "2h",
+     "1249 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   }
+  ],
+  "matched": 5,
+  "listed": 5,
+  "shifted_rows": 0,
+  "mentions_utc": true,
+  "zone": "cross",
+  "cls": "rescued"
+ },
+ {
+  "n": 15,
+  "frm": "LHR",
+  "to": "JFK",
+  "off_from": 0,
+  "off_to": -5,
+  "note": "I've shown the clock times as returned. Flight Network appended a Z (UTC marker) to both time fields, but the durations it returned match those clock times when read as local to each airport.",
+  "chat": [
+   [
+    "BA 175",
+    "09:35",
+    "12:35",
+    "8h 00m",
+    "10723 SEK"
+   ],
+   [
+    "BA 117",
+    "08:20",
+    "11:20",
+    "8h 00m",
+    "12663 SEK"
+   ],
+   [
+    "AY 5517",
+    "08:20",
+    "11:20",
+    "8h 00m",
+    "12857 SEK"
+   ],
+   [
+    "KL 2506",
+    "20:10",
+    "23:30",
+    "8h 20m",
+    "13205 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "09:35",
+    "12:35",
+    "8h",
+    "10723 SEK"
+   ],
+   [
+    "11:20",
+    "14:25",
+    "8h 5min",
+    "10723 SEK"
+   ],
+   [
+    "12:55",
+    "16:00",
+    "8h 5min",
+    "10723 SEK"
+   ],
+   [
+    "14:15",
+    "17:20",
+    "8h 5min",
+    "10723 SEK"
+   ],
+   [
+    "18:05",
+    "21:10",
+    "8h 5min",
+    "10803 SEK"
+   ],
+   [
+    "19:20",
+    "22:25",
+    "8h 5min",
+    "10803 SEK"
+   ],
+   [
+    "16:40",
+    "19:50",
+    "8h 10min",
+    "10803 SEK"
+   ],
+   [
+    "10:15",
+    "13:15",
+    "8h",
+    "10819 SEK"
+   ],
+   [
+    "15:35",
+    "18:40",
+    "8h 5min",
+    "10819 SEK"
+   ],
+   [
+    "17:00",
+    "20:05",
+    "8h 5min",
+    "10819 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "BA 175",
+    "dep": "09:35",
+    "arr": "12:35",
+    "dur": "8h 00m",
+    "fare": "10723 SEK",
+    "web": [
+     "09:35",
+     "12:35",
+     "8h",
+     "10723 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "BA 117",
+    "dep": "08:20",
+    "arr": "11:20",
+    "dur": "8h 00m",
+    "fare": "12663 SEK",
+    "web": null,
+    "sd": null,
+    "sa": null
+   },
+   {
+    "fn": "AY 5517",
+    "dep": "08:20",
+    "arr": "11:20",
+    "dur": "8h 00m",
+    "fare": "12857 SEK",
+    "web": null,
+    "sd": null,
+    "sa": null
+   },
+   {
+    "fn": "KL 2506",
+    "dep": "20:10",
+    "arr": "23:30",
+    "dur": "8h 20m",
+    "fare": "13205 SEK",
+    "web": null,
+    "sd": null,
+    "sa": null
+   }
+  ],
+  "matched": 1,
+  "listed": 4,
+  "shifted_rows": 0,
+  "mentions_utc": true,
+  "zone": "cross",
+  "cls": "rescued"
+ },
+ {
+  "n": 16,
+  "frm": "JFK",
+  "to": "LAX",
+  "off_from": -5,
+  "off_to": -8,
+  "note": "VOID: Flight Network returned no matching nonstop flights. No times to compare.",
+  "chat": [],
+  "web": [],
+  "cls": "void"
+ },
+ {
+  "n": 17,
+  "frm": "JFK",
+  "to": "LHR",
+  "off_from": -5,
+  "off_to": 0,
+  "note": "Flight Network marks the timestamps with Z, but the clock times match the listed durations when read as local airport times. I've shown them on that basis.",
+  "chat": [
+   [
+    "KL 2505",
+    "08:00",
+    "20:10",
+    "7 h 10 min",
+    "4739 SEK"
+   ],
+   [
+    "AF 9656",
+    "08:00",
+    "20:10",
+    "7 h 10 min",
+    "4757 SEK"
+   ],
+   [
+    "BA 1594",
+    "10:10",
+    "22:10",
+    "7 h",
+    "4206 SEK"
+   ],
+   [
+    "BA 1511",
+    "18:25",
+    "06:20+1",
+    "6 h 55 min",
+    "4837 SEK"
+   ],
+   [
+    "BA 1515",
+    "21:15",
+    "09:15+1",
+    "7 h",
+    "4837 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "23:20",
+    "11:10+1",
+    "6h 50min",
+    "7808 SEK"
+   ],
+   [
+    "10:10",
+    "22:10",
+    "7h",
+    "4206 SEK"
+   ],
+   [
+    "10:10",
+    "22:10",
+    "7h",
+    "4451 SEK"
+   ],
+   [
+    "10:10",
+    "22:10",
+    "7h",
+    "4545 SEK"
+   ],
+   [
+    "08:00",
+    "20:10",
+    "7h 10min",
+    "4726 SEK"
+   ],
+   [
+    "21:10",
+    "09:25+1",
+    "7h 15min",
+    "4726 SEK"
+   ],
+   [
+    "08:00",
+    "20:10",
+    "7h 10min",
+    "4739 SEK"
+   ],
+   [
+    "21:10",
+    "09:25+1",
+    "7h 15min",
+    "4739 SEK"
+   ],
+   [
+    "08:00",
+    "20:10",
+    "7h 10min",
+    "4757 SEK"
+   ],
+   [
+    "21:10",
+    "09:25+1",
+    "7h 15min",
+    "4757 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "KL 2505",
+    "dep": "08:00",
+    "arr": "20:10",
+    "dur": "7 h 10 min",
+    "fare": "4739 SEK",
+    "web": [
+     "08:00",
+     "20:10",
+     "7h 10min",
+     "4726 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "AF 9656",
+    "dep": "08:00",
+    "arr": "20:10",
+    "dur": "7 h 10 min",
+    "fare": "4757 SEK",
+    "web": [
+     "08:00",
+     "20:10",
+     "7h 10min",
+     "4726 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "BA 1594",
+    "dep": "10:10",
+    "arr": "22:10",
+    "dur": "7 h",
+    "fare": "4206 SEK",
+    "web": [
+     "10:10",
+     "22:10",
+     "7h",
+     "4206 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "BA 1511",
+    "dep": "18:25",
+    "arr": "06:20+1",
+    "dur": "6 h 55 min",
+    "fare": "4837 SEK",
+    "web": null,
+    "sd": null,
+    "sa": null
+   },
+   {
+    "fn": "BA 1515",
+    "dep": "21:15",
+    "arr": "09:15+1",
+    "dur": "7 h",
+    "fare": "4837 SEK",
+    "web": null,
+    "sd": null,
+    "sa": null
+   }
+  ],
+  "matched": 3,
+  "listed": 5,
+  "shifted_rows": 0,
+  "mentions_utc": true,
+  "zone": "cross",
+  "cls": "rescued"
+ },
+ {
+  "n": 18,
+  "frm": "DXB",
+  "to": "LHR",
+  "off_from": 4,
+  "off_to": 0,
+  "note": "I've shown the times as airport-local. Flight Network's timestamps carry a Z suffix, but the reported durations match the displayed clock times when read as Dubai and London local times.",
+  "chat": [
+   [
+    "EK 7",
+    "03:10",
+    "07:10",
+    "8h 00m",
+    "7338 SEK"
+   ],
+   [
+    "EK 3",
+    "14:30",
+    "18:20",
+    "7h 50m",
+    "7338 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "14:30",
+    "18:20",
+    "7h 50min",
+    "7338 SEK"
+   ],
+   [
+    "07:45",
+    "11:40",
+    "7h 55min",
+    "7338 SEK"
+   ],
+   [
+    "16:05",
+    "20:00",
+    "7h 55min",
+    "7338 SEK"
+   ],
+   [
+    "03:10",
+    "07:10",
+    "8h",
+    "7338 SEK"
+   ],
+   [
+    "12:10",
+    "16:10",
+    "8h",
+    "7338 SEK"
+   ],
+   [
+    "09:40",
+    "13:50",
+    "8h 10min",
+    "7338 SEK"
+   ],
+   [
+    "12:30",
+    "16:40",
+    "8h 10min",
+    "7338 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "EK 7",
+    "dep": "03:10",
+    "arr": "07:10",
+    "dur": "8h 00m",
+    "fare": "7338 SEK",
+    "web": [
+     "03:10",
+     "07:10",
+     "8h",
+     "7338 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "EK 3",
+    "dep": "14:30",
+    "arr": "18:20",
+    "dur": "7h 50m",
+    "fare": "7338 SEK",
+    "web": [
+     "14:30",
+     "18:20",
+     "7h 50min",
+     "7338 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   }
+  ],
+  "matched": 2,
+  "listed": 2,
+  "shifted_rows": 0,
+  "mentions_utc": true,
+  "zone": "cross",
+  "cls": "rescued"
+ },
+ {
+  "n": 19,
+  "frm": "DEL",
+  "to": "DXB",
+  "off_from": 5.5,
+  "off_to": 4,
+  "note": "Flight Network marked the times as UTC, but the listed durations match when the displayed times are read as local to each airport. The table uses that interpretation.",
+  "chat": [
+   [
+    "6E 1461",
+    "07:40",
+    "10:25",
+    "4 h 15 min",
+    "2579 SEK"
+   ],
+   [
+    "AI 929",
+    "08:40",
+    "11:25",
+    "4 h 15 min",
+    "2290 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "16:15",
+    "18:35",
+    "3h 50min",
+    "4195 SEK"
+   ],
+   [
+    "08:40",
+    "11:25",
+    "4h 15min",
+    "2290 SEK"
+   ],
+   [
+    "18:20",
+    "20:50",
+    "4h",
+    "2566 SEK"
+   ],
+   [
+    "07:40",
+    "10:25",
+    "4h 15min",
+    "2579 SEK"
+   ],
+   [
+    "07:10",
+    "09:50",
+    "4h 10min",
+    "2609 SEK"
+   ],
+   [
+    "09:50",
+    "12:45",
+    "4h 25min",
+    "2838 SEK"
+   ],
+   [
+    "17:35",
+    "20:25",
+    "4h 20min",
+    "2873 SEK"
+   ],
+   [
+    "03:20",
+    "05:50",
+    "4h",
+    "3059 SEK"
+   ],
+   [
+    "20:50",
+    "23:30",
+    "4h 10min",
+    "3231 SEK"
+   ],
+   [
+    "19:20",
+    "22:05",
+    "4h 15min",
+    "3239 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "6E 1461",
+    "dep": "07:40",
+    "arr": "10:25",
+    "dur": "4 h 15 min",
+    "fare": "2579 SEK",
+    "web": [
+     "07:40",
+     "10:25",
+     "4h 15min",
+     "2579 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "AI 929",
+    "dep": "08:40",
+    "arr": "11:25",
+    "dur": "4 h 15 min",
+    "fare": "2290 SEK",
+    "web": [
+     "08:40",
+     "11:25",
+     "4h 15min",
+     "2290 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   }
+  ],
+  "matched": 2,
+  "listed": 2,
+  "shifted_rows": 0,
+  "mentions_utc": true,
+  "zone": "cross",
+  "cls": "rescued"
+ },
+ {
+  "n": 20,
+  "frm": "SIN",
+  "to": "BKK",
+  "off_from": 8,
+  "off_to": 7,
+  "note": "I've shown the times as local because that interpretation matches the listed duration and the one-hour time difference, even though Flight Network's timestamps carried a UTC marker. The other four results arrived at Bangkok Don Mueang (DMK).",
+  "chat": [
+   [
+    "TR 610",
+    "16:00",
+    "17:35",
+    "2 h 35 min",
+    "1495 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "15:05",
+    "16:30",
+    "2h 25min",
+    "1352 SEK"
+   ],
+   [
+    "19:15",
+    "20:35",
+    "2h 20min",
+    "1987 SEK"
+   ],
+   [
+    "17:40",
+    "19:15",
+    "2h 35min",
+    "1495 SEK"
+   ],
+   [
+    "21:40",
+    "23:15",
+    "2h 35min",
+    "1410 SEK"
+   ],
+   [
+    "11:00",
+    "12:30",
+    "2h 30min",
+    "1467 SEK"
+   ],
+   [
+    "20:45",
+    "22:15",
+    "2h 30min",
+    "1467 SEK"
+   ],
+   [
+    "16:00",
+    "17:35",
+    "2h 35min",
+    "1495 SEK"
+   ],
+   [
+    "06:40",
+    "08:15",
+    "2h 35min",
+    "1684 SEK"
+   ],
+   [
+    "19:40",
+    "21:15",
+    "2h 35min",
+    "1684 SEK"
+   ],
+   [
+    "09:15",
+    "10:50",
+    "2h 35min",
+    "1915 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "TR 610",
+    "dep": "16:00",
+    "arr": "17:35",
+    "dur": "2 h 35 min",
+    "fare": "1495 SEK",
+    "web": [
+     "16:00",
+     "17:35",
+     "2h 35min",
+     "1495 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   }
+  ],
+  "matched": 1,
+  "listed": 1,
+  "shifted_rows": 0,
+  "mentions_utc": true,
+  "zone": "cross",
+  "cls": "rescued"
+ },
+ {
+  "n": 21,
+  "frm": "NRT",
+  "to": "ICN",
+  "off_from": 9,
+  "off_to": 9,
+  "note": "Times are local at both airports (UTC+9). Flight Network tagged the timestamps Z, but the clock times match published local schedules, so I used the displayed hours. (ChatGPT ran a web search to check.)",
+  "chat": [
+   [
+    "RS 260",
+    "12:50",
+    "15:35",
+    "2h 45m",
+    "1101 SEK"
+   ],
+   [
+    "RS 248",
+    "11:25",
+    "14:05",
+    "2h 40m",
+    "1157 SEK"
+   ],
+   [
+    "ZG 45",
+    "08:55",
+    "11:35",
+    "2h 40m",
+    "1223 SEK"
+   ],
+   [
+    "ZG 43",
+    "10:55",
+    "13:35",
+    "2h 40m",
+    "1223 SEK"
+   ],
+   [
+    "7C 1102",
+    "11:35",
+    "14:30",
+    "2h 55m",
+    "1234 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "12:50",
+    "15:35",
+    "2h 45min",
+    "1101 SEK"
+   ],
+   [
+    "20:00",
+    "22:30",
+    "2h 30min",
+    "1471 SEK"
+   ],
+   [
+    "08:30",
+    "11:50",
+    "3h 20min",
+    "1124 SEK"
+   ],
+   [
+    "11:25",
+    "14:05",
+    "2h 40min",
+    "1157 SEK"
+   ],
+   [
+    "11:55",
+    "14:55",
+    "3h",
+    "1208 SEK"
+   ],
+   [
+    "08:55",
+    "11:35",
+    "2h 40min",
+    "1223 SEK"
+   ],
+   [
+    "10:55",
+    "13:35",
+    "2h 40min",
+    "1223 SEK"
+   ],
+   [
+    "11:35",
+    "14:30",
+    "2h 55min",
+    "1234 SEK"
+   ],
+   [
+    "11:50",
+    "14:50",
+    "3h",
+    "1234 SEK"
+   ],
+   [
+    "12:05",
+    "15:10",
+    "3h 5min",
+    "1248 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "RS 260",
+    "dep": "12:50",
+    "arr": "15:35",
+    "dur": "2h 45m",
+    "fare": "1101 SEK",
+    "web": [
+     "12:50",
+     "15:35",
+     "2h 45min",
+     "1101 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "RS 248",
+    "dep": "11:25",
+    "arr": "14:05",
+    "dur": "2h 40m",
+    "fare": "1157 SEK",
+    "web": [
+     "11:25",
+     "14:05",
+     "2h 40min",
+     "1157 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "ZG 45",
+    "dep": "08:55",
+    "arr": "11:35",
+    "dur": "2h 40m",
+    "fare": "1223 SEK",
+    "web": [
+     "08:55",
+     "11:35",
+     "2h 40min",
+     "1223 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "ZG 43",
+    "dep": "10:55",
+    "arr": "13:35",
+    "dur": "2h 40m",
+    "fare": "1223 SEK",
+    "web": [
+     "10:55",
+     "13:35",
+     "2h 40min",
+     "1223 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "7C 1102",
+    "dep": "11:35",
+    "arr": "14:30",
+    "dur": "2h 55m",
+    "fare": "1234 SEK",
+    "web": [
+     "11:35",
+     "14:30",
+     "2h 55min",
+     "1234 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   }
+  ],
+  "matched": 5,
+  "listed": 5,
+  "shifted_rows": 0,
+  "mentions_utc": true,
+  "zone": "same",
+  "cls": "rescued"
+ },
+ {
+  "n": 22,
+  "frm": "SYD",
+  "to": "MEL",
+  "off_from": 11,
+  "off_to": 11,
+  "note": "The table uses the clock times exactly as returned. Flight Network tagged both times with Z (UTC). Local departure and arrival times are unverified.",
+  "chat": [
+   [
+    "JQ 501",
+    "06:00",
+    "07:35",
+    "1 h 35 min",
+    "860 SEK"
+   ],
+   [
+    "JQ 505",
+    "07:00",
+    "08:35",
+    "1 h 35 min",
+    "860 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "21:45",
+    "23:15",
+    "1h 30min",
+    "661 SEK"
+   ],
+   [
+    "10:20",
+    "11:55",
+    "1h 35min",
+    "1160 SEK"
+   ],
+   [
+    "08:10",
+    "09:45",
+    "1h 35min",
+    "819 SEK"
+   ],
+   [
+    "12:30",
+    "14:05",
+    "1h 35min",
+    "819 SEK"
+   ],
+   [
+    "06:00",
+    "07:35",
+    "1h 35min",
+    "860 SEK"
+   ],
+   [
+    "07:00",
+    "08:35",
+    "1h 35min",
+    "860 SEK"
+   ],
+   [
+    "16:25",
+    "18:05",
+    "1h 40min",
+    "860 SEK"
+   ],
+   [
+    "18:45",
+    "20:20",
+    "1h 35min",
+    "895 SEK"
+   ],
+   [
+    "09:15",
+    "10:50",
+    "1h 35min",
+    "968 SEK"
+   ],
+   [
+    "09:35",
+    "11:10",
+    "1h 35min",
+    "968 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "JQ 501",
+    "dep": "06:00",
+    "arr": "07:35",
+    "dur": "1 h 35 min",
+    "fare": "860 SEK",
+    "web": [
+     "06:00",
+     "07:35",
+     "1h 35min",
+     "860 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "JQ 505",
+    "dep": "07:00",
+    "arr": "08:35",
+    "dur": "1 h 35 min",
+    "fare": "860 SEK",
+    "web": [
+     "07:00",
+     "08:35",
+     "1h 35min",
+     "860 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   }
+  ],
+  "matched": 2,
+  "listed": 2,
+  "shifted_rows": 0,
+  "mentions_utc": true,
+  "zone": "same",
+  "cls": "utc_label"
+ },
+ {
+  "n": 23,
+  "frm": "MAD",
+  "to": "BCN",
+  "off_from": 1,
+  "off_to": 1,
+  "note": "Column headers: Departure (UTC), Arrival (UTC). Times are shown as returned by Flight Network, which marked them Z (UTC).",
+  "chat": [
+   [
+    "V7 3729",
+    "08:30",
+    "09:50",
+    "1h 20m",
+    "514 SEK"
+   ],
+   [
+    "UX 7703",
+    "15:15",
+    "16:40",
+    "1h 25m",
+    "619 SEK"
+   ],
+   [
+    "V7 3731",
+    "17:10",
+    "18:30",
+    "1h 20m",
+    "444 SEK"
+   ],
+   [
+    "VY 1009",
+    "19:35",
+    "20:55",
+    "1h 20m",
+    "1063 SEK"
+   ],
+   [
+    "UX 7707",
+    "20:40",
+    "22:05",
+    "1h 25m",
+    "452 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "17:10",
+    "18:30",
+    "1h 20min",
+    "444 SEK"
+   ],
+   [
+    "21:40",
+    "22:55",
+    "1h 15min",
+    "2083 SEK"
+   ],
+   [
+    "20:40",
+    "22:05",
+    "1h 25min",
+    "452 SEK"
+   ],
+   [
+    "08:30",
+    "09:50",
+    "1h 20min",
+    "514 SEK"
+   ],
+   [
+    "15:15",
+    "16:40",
+    "1h 25min",
+    "619 SEK"
+   ],
+   [
+    "19:35",
+    "20:55",
+    "1h 20min",
+    "1063 SEK"
+   ],
+   [
+    "07:30",
+    "08:55",
+    "1h 25min",
+    "1092 SEK"
+   ],
+   [
+    "19:35",
+    "20:55",
+    "1h 20min",
+    "1813 SEK"
+   ],
+   [
+    "18:00",
+    "19:15",
+    "1h 15min",
+    "2443 SEK"
+   ],
+   [
+    "19:10",
+    "20:25",
+    "1h 15min",
+    "2443 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "V7 3729",
+    "dep": "08:30",
+    "arr": "09:50",
+    "dur": "1h 20m",
+    "fare": "514 SEK",
+    "web": [
+     "08:30",
+     "09:50",
+     "1h 20min",
+     "514 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "UX 7703",
+    "dep": "15:15",
+    "arr": "16:40",
+    "dur": "1h 25m",
+    "fare": "619 SEK",
+    "web": [
+     "15:15",
+     "16:40",
+     "1h 25min",
+     "619 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "V7 3731",
+    "dep": "17:10",
+    "arr": "18:30",
+    "dur": "1h 20m",
+    "fare": "444 SEK",
+    "web": [
+     "17:10",
+     "18:30",
+     "1h 20min",
+     "444 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "VY 1009",
+    "dep": "19:35",
+    "arr": "20:55",
+    "dur": "1h 20m",
+    "fare": "1063 SEK",
+    "web": [
+     "19:35",
+     "20:55",
+     "1h 20min",
+     "1063 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "UX 7707",
+    "dep": "20:40",
+    "arr": "22:05",
+    "dur": "1h 25m",
+    "fare": "452 SEK",
+    "web": [
+     "20:40",
+     "22:05",
+     "1h 25min",
+     "452 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   }
+  ],
+  "matched": 5,
+  "listed": 5,
+  "shifted_rows": 0,
+  "mentions_utc": true,
+  "zone": "same",
+  "cls": "utc_label"
+ },
+ {
+  "n": 24,
+  "frm": "ARN",
+  "to": "GOT",
+  "off_from": 1,
+  "off_to": 1,
+  "note": "Times are shown in Swedish local time (CET), converted from Flight Network's UTC timestamps.",
+  "chat": [
+   [
+    "SK 145",
+    "09:15",
+    "10:15",
+    "1 h",
+    "1160 SEK"
+   ],
+   [
+    "SK 147",
+    "10:30",
+    "11:45",
+    "1 h 15 min",
+    "2032 SEK"
+   ],
+   [
+    "SK 155",
+    "12:55",
+    "13:55",
+    "1 h",
+    "758 SEK"
+   ],
+   [
+    "SK 157",
+    "15:35",
+    "16:35",
+    "1 h",
+    "1160 SEK"
+   ],
+   [
+    "SK 171",
+    "23:15",
+    "00:15+1",
+    "1 h",
+    "586 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "22:15",
+    "23:15",
+    "1h",
+    "586 SEK"
+   ],
+   [
+    "11:55",
+    "12:55",
+    "1h",
+    "758 SEK"
+   ],
+   [
+    "08:15",
+    "09:15",
+    "1h",
+    "1160 SEK"
+   ],
+   [
+    "14:35",
+    "15:35",
+    "1h",
+    "1160 SEK"
+   ],
+   [
+    "09:30",
+    "10:45",
+    "1h 15min",
+    "2032 SEK"
+   ],
+   [
+    "18:20",
+    "19:20",
+    "1h",
+    "2325 SEK"
+   ],
+   [
+    "17:25",
+    "18:40",
+    "1h 15min",
+    "2325 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "SK 145",
+    "dep": "09:15",
+    "arr": "10:15",
+    "dur": "1 h",
+    "fare": "1160 SEK",
+    "web": [
+     "08:15",
+     "09:15",
+     "1h",
+     "1160 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   },
+   {
+    "fn": "SK 147",
+    "dep": "10:30",
+    "arr": "11:45",
+    "dur": "1 h 15 min",
+    "fare": "2032 SEK",
+    "web": [
+     "09:30",
+     "10:45",
+     "1h 15min",
+     "2032 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   },
+   {
+    "fn": "SK 155",
+    "dep": "12:55",
+    "arr": "13:55",
+    "dur": "1 h",
+    "fare": "758 SEK",
+    "web": [
+     "11:55",
+     "12:55",
+     "1h",
+     "758 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   },
+   {
+    "fn": "SK 157",
+    "dep": "15:35",
+    "arr": "16:35",
+    "dur": "1 h",
+    "fare": "1160 SEK",
+    "web": [
+     "14:35",
+     "15:35",
+     "1h",
+     "1160 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   },
+   {
+    "fn": "SK 171",
+    "dep": "23:15",
+    "arr": "00:15+1",
+    "dur": "1 h",
+    "fare": "586 SEK",
+    "web": [
+     "22:15",
+     "23:15",
+     "1h",
+     "586 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   }
+  ],
+  "matched": 5,
+  "listed": 5,
+  "shifted_rows": 5,
+  "mentions_utc": true,
+  "zone": "same",
+  "cls": "shifted",
+  "shift": [
+   60,
+   60
+  ]
+ },
+ {
+  "n": 25,
+  "frm": "CPH",
+  "to": "AMS",
+  "off_from": 1,
+  "off_to": 1,
+  "note": "Times are shown in local time (CET, UTC+1), converted from Flight Network's UTC timestamps.",
+  "chat": [
+   [
+    "KL 1270",
+    "13:05",
+    "14:30",
+    "1h 25m",
+    "890 SEK"
+   ],
+   [
+    "SK 547",
+    "13:45",
+    "15:15",
+    "1h 30m",
+    "993 SEK"
+   ],
+   [
+    "KL 1272",
+    "15:15",
+    "16:40",
+    "1h 25m",
+    "981 SEK"
+   ],
+   [
+    "KL 1274",
+    "18:30",
+    "20:00",
+    "1h 30m",
+    "890 SEK"
+   ],
+   [
+    "KL 1276",
+    "20:20",
+    "21:50",
+    "1h 30m",
+    "890 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "12:05",
+    "13:30",
+    "1h 25min",
+    "890 SEK"
+   ],
+   [
+    "17:30",
+    "19:00",
+    "1h 30min",
+    "890 SEK"
+   ],
+   [
+    "19:20",
+    "20:50",
+    "1h 30min",
+    "890 SEK"
+   ],
+   [
+    "14:15",
+    "15:40",
+    "1h 25min",
+    "981 SEK"
+   ],
+   [
+    "12:45",
+    "14:15",
+    "1h 30min",
+    "993 SEK"
+   ],
+   [
+    "18:05",
+    "19:35",
+    "1h 30min",
+    "993 SEK"
+   ],
+   [
+    "15:20",
+    "16:50",
+    "1h 30min",
+    "1138 SEK"
+   ],
+   [
+    "09:55",
+    "11:20",
+    "1h 25min",
+    "1177 SEK"
+   ],
+   [
+    "06:00",
+    "07:30",
+    "1h 30min",
+    "1341 SEK"
+   ],
+   [
+    "08:10",
+    "09:45",
+    "1h 35min",
+    "1865 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "KL 1270",
+    "dep": "13:05",
+    "arr": "14:30",
+    "dur": "1h 25m",
+    "fare": "890 SEK",
+    "web": [
+     "12:05",
+     "13:30",
+     "1h 25min",
+     "890 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   },
+   {
+    "fn": "SK 547",
+    "dep": "13:45",
+    "arr": "15:15",
+    "dur": "1h 30m",
+    "fare": "993 SEK",
+    "web": [
+     "12:45",
+     "14:15",
+     "1h 30min",
+     "993 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   },
+   {
+    "fn": "KL 1272",
+    "dep": "15:15",
+    "arr": "16:40",
+    "dur": "1h 25m",
+    "fare": "981 SEK",
+    "web": [
+     "14:15",
+     "15:40",
+     "1h 25min",
+     "981 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   },
+   {
+    "fn": "KL 1274",
+    "dep": "18:30",
+    "arr": "20:00",
+    "dur": "1h 30m",
+    "fare": "890 SEK",
+    "web": [
+     "17:30",
+     "19:00",
+     "1h 30min",
+     "890 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   },
+   {
+    "fn": "KL 1276",
+    "dep": "20:20",
+    "arr": "21:50",
+    "dur": "1h 30m",
+    "fare": "890 SEK",
+    "web": [
+     "19:20",
+     "20:50",
+     "1h 30min",
+     "890 SEK"
+    ],
+    "sd": 60,
+    "sa": 60
+   }
+  ],
+  "matched": 5,
+  "listed": 5,
+  "shifted_rows": 5,
+  "mentions_utc": true,
+  "zone": "same",
+  "cls": "shifted",
+  "shift": [
+   60,
+   60
+  ]
+ },
+ {
+  "n": 26,
+  "frm": "FRA",
+  "to": "VIE",
+  "off_from": 1,
+  "off_to": 1,
+  "note": "Column headers: Departs FRA (UTC), Arrives VIE (UTC). Times are shown in UTC as returned by Flight Network. Frankfurt and Vienna are both one hour ahead of UTC on this date.",
+  "chat": [
+   [
+    "OS 222",
+    "06:50",
+    "08:15",
+    "1 h 25 min",
+    "1026 SEK"
+   ],
+   [
+    "DE 4362",
+    "09:00",
+    "10:20",
+    "1 h 20 min",
+    "777 SEK"
+   ],
+   [
+    "DE 4364",
+    "14:20",
+    "15:40",
+    "1 h 20 min",
+    "777 SEK"
+   ],
+   [
+    "OS 212",
+    "16:15",
+    "17:40",
+    "1 h 25 min",
+    "971 SEK"
+   ],
+   [
+    "DE 4360",
+    "20:10",
+    "21:30",
+    "1 h 20 min",
+    "777 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "09:00",
+    "10:20",
+    "1h 20min",
+    "777 SEK"
+   ],
+   [
+    "14:20",
+    "15:40",
+    "1h 20min",
+    "777 SEK"
+   ],
+   [
+    "20:10",
+    "21:30",
+    "1h 20min",
+    "777 SEK"
+   ],
+   [
+    "16:15",
+    "17:40",
+    "1h 25min",
+    "971 SEK"
+   ],
+   [
+    "06:50",
+    "08:15",
+    "1h 25min",
+    "1026 SEK"
+   ],
+   [
+    "08:20",
+    "09:45",
+    "1h 25min",
+    "1026 SEK"
+   ],
+   [
+    "09:20",
+    "10:45",
+    "1h 25min",
+    "1026 SEK"
+   ],
+   [
+    "10:20",
+    "11:45",
+    "1h 25min",
+    "1026 SEK"
+   ],
+   [
+    "11:45",
+    "13:10",
+    "1h 25min",
+    "1026 SEK"
+   ],
+   [
+    "12:50",
+    "14:15",
+    "1h 25min",
+    "1026 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "OS 222",
+    "dep": "06:50",
+    "arr": "08:15",
+    "dur": "1 h 25 min",
+    "fare": "1026 SEK",
+    "web": [
+     "06:50",
+     "08:15",
+     "1h 25min",
+     "1026 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "DE 4362",
+    "dep": "09:00",
+    "arr": "10:20",
+    "dur": "1 h 20 min",
+    "fare": "777 SEK",
+    "web": [
+     "09:00",
+     "10:20",
+     "1h 20min",
+     "777 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "DE 4364",
+    "dep": "14:20",
+    "arr": "15:40",
+    "dur": "1 h 20 min",
+    "fare": "777 SEK",
+    "web": [
+     "14:20",
+     "15:40",
+     "1h 20min",
+     "777 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "OS 212",
+    "dep": "16:15",
+    "arr": "17:40",
+    "dur": "1 h 25 min",
+    "fare": "971 SEK",
+    "web": [
+     "16:15",
+     "17:40",
+     "1h 25min",
+     "971 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "DE 4360",
+    "dep": "20:10",
+    "arr": "21:30",
+    "dur": "1 h 20 min",
+    "fare": "777 SEK",
+    "web": [
+     "20:10",
+     "21:30",
+     "1h 20min",
+     "777 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   }
+  ],
+  "matched": 5,
+  "listed": 5,
+  "shifted_rows": 0,
+  "mentions_utc": true,
+  "zone": "same",
+  "cls": "utc_label"
+ },
+ {
+  "n": 27,
+  "frm": "ZRH",
+  "to": "FCO",
+  "off_from": 1,
+  "off_to": 1,
+  "note": "Column headers: Departure (UTC), Arrival (UTC). Times are shown in UTC, as returned by Flight Network.",
+  "chat": [
+   [
+    "LX 1726",
+    "07:10",
+    "08:40",
+    "1 h 30 min",
+    "1397 SEK"
+   ],
+   [
+    "U2 2970",
+    "08:15",
+    "09:50",
+    "1 h 35 min",
+    "590 SEK"
+   ],
+   [
+    "AZ 571",
+    "10:55",
+    "12:25",
+    "1 h 30 min",
+    "1500 SEK"
+   ],
+   [
+    "LX 1736",
+    "12:25",
+    "14:00",
+    "1 h 35 min",
+    "1397 SEK"
+   ],
+   [
+    "LX 1732",
+    "17:50",
+    "19:25",
+    "1 h 35 min",
+    "1397 SEK"
+   ]
+  ],
+  "web": [
+   [
+    "08:15",
+    "09:50",
+    "1h 35min",
+    "590 SEK"
+   ],
+   [
+    "07:10",
+    "08:40",
+    "1h 30min",
+    "1397 SEK"
+   ],
+   [
+    "12:25",
+    "14:00",
+    "1h 35min",
+    "1397 SEK"
+   ],
+   [
+    "17:50",
+    "19:25",
+    "1h 35min",
+    "1397 SEK"
+   ],
+   [
+    "12:25",
+    "14:00",
+    "1h 35min",
+    "1467 SEK"
+   ],
+   [
+    "17:50",
+    "19:25",
+    "1h 35min",
+    "1467 SEK"
+   ],
+   [
+    "10:55",
+    "12:25",
+    "1h 30min",
+    "1485 SEK"
+   ],
+   [
+    "19:05",
+    "20:35",
+    "1h 30min",
+    "1485 SEK"
+   ],
+   [
+    "10:55",
+    "12:25",
+    "1h 30min",
+    "1687 SEK"
+   ],
+   [
+    "07:10",
+    "08:40",
+    "1h 30min",
+    "1795 SEK"
+   ]
+  ],
+  "rows": [
+   {
+    "fn": "LX 1726",
+    "dep": "07:10",
+    "arr": "08:40",
+    "dur": "1 h 30 min",
+    "fare": "1397 SEK",
+    "web": [
+     "07:10",
+     "08:40",
+     "1h 30min",
+     "1397 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "U2 2970",
+    "dep": "08:15",
+    "arr": "09:50",
+    "dur": "1 h 35 min",
+    "fare": "590 SEK",
+    "web": [
+     "08:15",
+     "09:50",
+     "1h 35min",
+     "590 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "AZ 571",
+    "dep": "10:55",
+    "arr": "12:25",
+    "dur": "1 h 30 min",
+    "fare": "1500 SEK",
+    "web": [
+     "10:55",
+     "12:25",
+     "1h 30min",
+     "1485 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "LX 1736",
+    "dep": "12:25",
+    "arr": "14:00",
+    "dur": "1 h 35 min",
+    "fare": "1397 SEK",
+    "web": [
+     "12:25",
+     "14:00",
+     "1h 35min",
+     "1397 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   },
+   {
+    "fn": "LX 1732",
+    "dep": "17:50",
+    "arr": "19:25",
+    "dur": "1 h 35 min",
+    "fare": "1397 SEK",
+    "web": [
+     "17:50",
+     "19:25",
+     "1h 35min",
+     "1397 SEK"
+    ],
+    "sd": 0,
+    "sa": 0
+   }
+  ],
+  "matched": 5,
+  "listed": 5,
+  "shifted_rows": 0,
+  "mentions_utc": true,
+  "zone": "same",
+  "cls": "utc_label"
+ }
+]

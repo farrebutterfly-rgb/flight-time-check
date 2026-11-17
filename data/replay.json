@@ -1,0 +1,177 @@
+[
+ {
+  "n": 1,
+  "route": "ARN-LGW",
+  "legs": 3,
+  "shipped_fail": 3,
+  "fixed_fail": 0
+ },
+ {
+  "n": 2,
+  "route": "ARN-CPH",
+  "legs": 5,
+  "shipped_fail": 5,
+  "fixed_fail": 0
+ },
+ {
+  "n": 3,
+  "route": "ARN-HEL",
+  "legs": 2,
+  "shipped_fail": 2,
+  "fixed_fail": 0
+ },
+ {
+  "n": 4,
+  "route": "LHR-EDI",
+  "legs": 10,
+  "shipped_fail": 0,
+  "fixed_fail": 0
+ },
+ {
+  "n": 5,
+  "route": "LIS-LHR",
+  "legs": 9,
+  "shipped_fail": 0,
+  "fixed_fail": 0
+ },
+ {
+  "n": 6,
+  "route": "LHR-ARN",
+  "legs": 9,
+  "shipped_fail": 9,
+  "fixed_fail": 0
+ },
+ {
+  "n": 7,
+  "route": "CDG-MAD",
+  "legs": 10,
+  "shipped_fail": 10,
+  "fixed_fail": 0
+ },
+ {
+  "n": 8,
+  "route": "AMS-BCN",
+  "legs": 9,
+  "shipped_fail": 9,
+  "fixed_fail": 0
+ },
+ {
+  "n": 10,
+  "route": "HEL-ARN",
+  "legs": 10,
+  "shipped_fail": 10,
+  "fixed_fail": 0
+ },
+ {
+  "n": 11,
+  "route": "ATH-FCO",
+  "legs": 5,
+  "shipped_fail": 5,
+  "fixed_fail": 0
+ },
+ {
+  "n": 12,
+  "route": "OSL-CPH",
+  "legs": 10,
+  "shipped_fail": 10,
+  "fixed_fail": 0
+ },
+ {
+  "n": 13,
+  "route": "GOT-AMS",
+  "legs": 5,
+  "shipped_fail": 5,
+  "fixed_fail": 0
+ },
+ {
+  "n": 14,
+  "route": "MUC-LHR",
+  "legs": 10,
+  "shipped_fail": 10,
+  "fixed_fail": 0
+ },
+ {
+  "n": 15,
+  "route": "LHR-JFK",
+  "legs": 10,
+  "shipped_fail": 10,
+  "fixed_fail": 0
+ },
+ {
+  "n": 17,
+  "route": "JFK-LHR",
+  "legs": 10,
+  "shipped_fail": 10,
+  "fixed_fail": 0
+ },
+ {
+  "n": 18,
+  "route": "DXB-LHR",
+  "legs": 7,
+  "shipped_fail": 7,
+  "fixed_fail": 0
+ },
+ {
+  "n": 19,
+  "route": "DEL-DXB",
+  "legs": 10,
+  "shipped_fail": 10,
+  "fixed_fail": 0
+ },
+ {
+  "n": 20,
+  "route": "SIN-BKK",
+  "legs": 10,
+  "shipped_fail": 10,
+  "fixed_fail": 0
+ },
+ {
+  "n": 21,
+  "route": "NRT-ICN",
+  "legs": 10,
+  "shipped_fail": 10,
+  "fixed_fail": 0
+ },
+ {
+  "n": 22,
+  "route": "SYD-MEL",
+  "legs": 10,
+  "shipped_fail": 10,
+  "fixed_fail": 0
+ },
+ {
+  "n": 23,
+  "route": "MAD-BCN",
+  "legs": 10,
+  "shipped_fail": 10,
+  "fixed_fail": 0
+ },
+ {
+  "n": 24,
+  "route": "ARN-GOT",
+  "legs": 7,
+  "shipped_fail": 7,
+  "fixed_fail": 0
+ },
+ {
+  "n": 25,
+  "route": "CPH-AMS",
+  "legs": 10,
+  "shipped_fail": 10,
+  "fixed_fail": 0
+ },
+ {
+  "n": 26,
+  "route": "FRA-VIE",
+  "legs": 10,
+  "shipped_fail": 10,
+  "fixed_fail": 0
+ },
+ {
+  "n": 27,
+  "route": "ZRH-FCO",
+  "legs": 10,
+  "shipped_fail": 10,
+  "fixed_fail": 0
+ }
+]
