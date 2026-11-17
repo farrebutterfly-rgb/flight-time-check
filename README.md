@@ -182,7 +182,7 @@ cd app && npm run build              # the program as one file, app/dist/index.h
 
 # Go 1.22 or later
 cd go && go test ./...               # 10 tests
-go build -o ftcheck ./ftcheck && ./ftcheck -guard ../examples/quoted_all.json
+go build -o bin/ftcheck ./ftcheck && ./bin/ftcheck -guard ../examples/quoted_all.json
 
 # Docker
 docker build -t flight-time-check . && docker run --rm flight-time-check

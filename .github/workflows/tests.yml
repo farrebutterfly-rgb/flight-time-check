@@ -45,5 +45,5 @@ jobs:
           go-version: "1.24"
       - run: go vet ./... && go test ./...
         working-directory: go
-      - run: go build -o ftcheck ./ftcheck && ./ftcheck -guard ../examples/quoted_all.json > /dev/null
+      - run: go build -o bin/ftcheck ./ftcheck && ./bin/ftcheck -guard ../examples/quoted_all.json > /dev/null
         working-directory: go

@@ -402,7 +402,7 @@ function Canary() {
 const RUN: [string, string, string][] = [
   ["Python", "Analysis, the guard and the MCP server", "pip install pytest mcp\npython3 -m pytest -q\npython3 stats.py\npython3 canary.py\npython3 server.py"],
   ["TypeScript", "The guard for a Node stack, an MCP server, this program", "cd ts && npm ci && npm test && npm start\ncd app && npm ci && npm run dev"],
-  ["Go", "ftcheck, one static binary for CI and ops", "cd go && go test ./...\ngo build -o ftcheck ./ftcheck\n./ftcheck ../examples/quoted_all.json"],
+  ["Go", "ftcheck, one static binary for CI and ops", "cd go && go test ./...\ngo build -o bin/ftcheck ./ftcheck\n./bin/ftcheck ../examples/quoted_all.json"],
   ["SQL", "The test as tables, and the queries BI would run", "python3 sql/run.py\npython3 sql/run.py ftc.sqlite"],
   ["Make and Docker", "Everything at once", "make test\ndocker build -t flight-time-check .\ndocker run --rm flight-time-check"],
 ];
