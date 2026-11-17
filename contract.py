@@ -7,21 +7,12 @@ Rule 2. arr.time minus dep.time equals durationMinutes.
 A value such as 2026-12-15T07:10:00Z for a 07:10 local departure from Zurich breaks
 rule 1: Z says UTC, the airport is at +01:00.
 """
+import json
 from datetime import datetime, timedelta
+from pathlib import Path
 from zoneinfo import ZoneInfo
 
-AIRPORT_TZ = {
-    "ARN": "Europe/Stockholm", "GOT": "Europe/Stockholm", "CPH": "Europe/Copenhagen",
-    "OSL": "Europe/Oslo", "HEL": "Europe/Helsinki", "LHR": "Europe/London",
-    "LGW": "Europe/London", "EDI": "Europe/London", "LIS": "Europe/Lisbon",
-    "CDG": "Europe/Paris", "MAD": "Europe/Madrid", "BCN": "Europe/Madrid",
-    "AMS": "Europe/Amsterdam", "FRA": "Europe/Berlin", "MUC": "Europe/Berlin",
-    "VIE": "Europe/Vienna", "ZRH": "Europe/Zurich", "FCO": "Europe/Rome",
-    "ATH": "Europe/Athens", "IST": "Europe/Istanbul", "JFK": "America/New_York",
-    "LAX": "America/Los_Angeles", "DXB": "Asia/Dubai", "DEL": "Asia/Kolkata",
-    "SIN": "Asia/Singapore", "BKK": "Asia/Bangkok", "NRT": "Asia/Tokyo",
-    "ICN": "Asia/Seoul", "SYD": "Australia/Sydney", "MEL": "Australia/Melbourne",
-}
+AIRPORT_TZ = json.loads((Path(__file__).parent / "data" / "airports.json").read_text(encoding="utf-8"))
 
 
 def _parse(value):

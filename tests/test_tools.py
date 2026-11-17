@@ -63,3 +63,32 @@ def test_mcp_server_returns_true_times():
     times = [f["dep"]["time"] for f in payload["flights"]]
     assert "2026-12-15T22:15:00+01:00" in times and not any(t.endswith("Z") for t in times)
     assert server.search_flights("ARN", "XXX")["error"]
+
+
+def test_sql_queries_agree_with_stats():
+    import sqlite3
+    import sys
+    from pathlib import Path
+
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "sql"))
+    import run as sqlrun
+
+    db = sqlite3.connect(":memory:")
+    sqlrun.load(db)
+    out = sqlrun.run_all(db)
+    zones = {row[0]: row for row in out["outcome_by_zone"][1]}
+    assert zones["same"][1:5] == (12, 5, 6, 11) and zones["cross"][4] == 1
+    assert out["flights_matched"][1][0] == (108, 100, 14)
+    assert out["repeats"][1][0][:4] == (8, 1, 1, 43.0)
+    assert dict((r[0], r[2]) for r in out["ab_by_format"][1]) == {"offset": 8, "stopgap": 3, "z": 0}
+
+
+def test_every_language_uses_the_same_airport_table():
+    from pathlib import Path
+
+    root = Path(__file__).resolve().parent.parent
+    shared = (root / "data" / "airports.json").read_text(encoding="utf-8").strip()
+    for copy in ("go/ftcheck/airports.json", "ts/src/airports.json"):
+        path = root / copy
+        if path.exists():
+            assert path.read_text(encoding="utf-8").strip() == shared, copy

@@ -1,0 +1,32 @@
+{
+  "name": "flight-time-guard",
+  "version": "1.0.0",
+  "description": "The flight time contract and guard in TypeScript, with an MCP server.",
+  "author": "Faris Sadik",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "bin": {
+    "flight-time-guard": "dist/src/server.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "start": "node dist/src/server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}

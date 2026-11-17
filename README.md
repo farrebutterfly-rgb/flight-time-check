@@ -4,6 +4,26 @@ A live test of the Flight Network app inside ChatGPT, checked against se.flightn
 
 By Faris Sadik, 17 November 2026. An independent test of public pages, with no access to internal systems or data.
 
+## What is in here
+
+A finding, the fix, and a working program that enforces it. One contract and one airport table, implemented and tested in four languages against the same recorded data.
+
+![The program, Finding view](docs/app_finding.jpg)
+
+| Part | Language | What it does |
+|---|---|---|
+| `app/` | TypeScript, React | **The program.** The finding, every search with both screenshots, the guard on any route or any pasted response, and the canary. Builds to one HTML file that opens with a double click |
+| `ts/` | TypeScript | The contract and the guard for a Node stack, and an MCP server over stdio |
+| `guard.py`, `server.py` | Python | The same guard, and an MCP server |
+| `go/ftcheck/` | Go | `ftcheck`, one static binary with the time zone database compiled in, for CI and ops |
+| `sql/` | SQL | The test as tables, and the queries BI would run on it |
+| `classify.py`, `stats.py` | Python | The analysis: every number in this README is computed, not typed |
+| `Makefile`, `Dockerfile`, `.github/workflows/` | | `make test` runs every language; CI runs Python, TypeScript and Go on every push |
+
+| Searches | Guard |
+|---|---|
+| ![Every search with both screens](docs/app_searches.jpg) | ![The guard on Stockholm to Gothenburg](docs/app_guard.jpg) |
+
 ## The finding
 
 Same flight, same fare, one hour apart.
@@ -144,15 +164,28 @@ leg 1 ZRH-FCO: ok
 
 ## Run it
 
-Python 3.9 or later. The checks use the standard library only. `pytest` for the tests and `mcp` for the server.
-
 ```
-python3 -m pytest -q      # 25 tests
+make test                 # Python, SQL, TypeScript and Go
+
+# Python 3.9 or later. The checks use the standard library only.
+python3 -m pytest -q      # 27 tests
 python3 stats.py          # every number in this README, computed from data/
 python3 classify.py       # rebuilds data/results.json from data/log.jsonl
 python3 canary.py         # the two rules on all 25 routes, before and after the guard
 python3 demo.py ZRH FCO   # one route, before and after
-python3 replay.py         # 23 of 25 searches break a rule as returned today, 0 of 25 with the offset
+python3 sql/run.py        # the BI queries in sql/queries.sql, on SQLite
+
+# TypeScript, Node 20 or later
+cd ts && npm ci && npm test          # 8 tests, including the MCP server end to end
+cd app && npm ci && npm run dev      # the program, at http://localhost:5173
+cd app && npm run build              # the program as one file, app/dist/index.html
+
+# Go 1.22 or later
+cd go && go test ./...               # 10 tests
+go build -o ftcheck ./ftcheck && ./ftcheck -guard ../examples/quoted_all.json
+
+# Docker
+docker build -t flight-time-check . && docker run --rm flight-time-check
 ```
 
 `replay.py` and `canary.py` rebuild payloads from the website's times, so their 23 of 25 follows from the time zones. The direct evidence is the 17 quoted flights and the 16 A/B trials.
@@ -171,6 +204,10 @@ The answer varies from run to run. Routes inside one time zone are where it fail
 
 | Path | What |
 |---|---|
+| `app/` | The program: React and TypeScript, built with Vite into one HTML file |
+| `ts/` | `flight-time-guard`: contract, guard and MCP server in TypeScript, tested with `node:test` |
+| `go/ftcheck/` | The contract and guard as a Go command line tool, with tests |
+| `sql/` | `schema.sql`, `queries.sql` and `run.py`, which loads the data into SQLite |
 | `contract.py` | The two rules, and `to_contract()` which shows the change |
 | `guard.py` | The fix as running code: attach the offset, check the duration, hold what fails |
 | `server.py` | MCP server with the guard in front of the flight search |
@@ -181,18 +218,17 @@ The answer varies from run to run. Routes inside one time zone are where it fail
 | `stats.py` | Every headline number, with 95 percent intervals |
 | `replay.py` | Runs the rules over the 25 logged searches |
 | `gallery.py` | Writes `SEARCHES.md` |
-| `tests/` | 25 tests, run in GitHub Actions on every push |
+| `tests/` | Python tests, including one that checks every language uses the same airport table |
+| `data/airports.json` | The one airport table. `make sync` copies it into the Go and TypeScript packages |
 | `data/log.jsonl` | One line per search: ChatGPT rows, ChatGPT's own note, website rows |
 | `data/results.json` | Classification per search, written by `classify.py` |
 | `data/quoted.json` | The 17 flights whose fields ChatGPT quoted |
 | `data/ab.json` | The nineteen A/B trials |
 | `data/repeat.json` | Ten repeats of one search, with time to answer |
-| `data/latency.json` | The "worked for" times read off ChatGPT |
-| `examples/` | The quoted fields as files for `check.py` |
-| `screenshots/searches/` | ChatGPT and website for each search, `rNN_chat.jpg` and `rNN_web.jpg` |
-| `screenshots/ab/` | The A/B trials: A and C with `Z`, B and D with the offset, E the stopgap |
+| `examples/` | The quoted fields as files for `check.py` and `ftcheck` |
+| `screenshots/` | ChatGPT and the website for each search, and the A/B trials |
 | `SEARCHES.md` | Every search with its class and both screenshots |
-| [Release v1.0](https://github.com/farrebutterfly-rgb/flight-time-check/releases/tag/v1.0) | The full report as one HTML page, `Flight_time_check_report.html`. Download it and open it in a browser |
+| [Release v1.0](https://github.com/farrebutterfly-rgb/flight-time-check/releases/tag/v1.0) | The written report as one HTML page |
 
 ## Limits
 
@@ -201,7 +237,7 @@ The answer varies from run to run. Routes inside one time zone are where it fail
 - The answer changes between runs. A newer model may repair more or fewer.
 - The A/B pasted the payload as text. It was not delivered through the app, and it covers two routes.
 - Fares: in 14 of 100 matched flights the fare in the chat differs from the matched website row by 2 to 31 SEK. Matching is by time and duration, not flight number, so this is an observation, not a finding.
-- The guard and the server run against a recording, not against the real tool. I have no MCP access.
+- The guard, the program and both servers run against a recording, not against the real tool. I have no MCP access.
 - Nobody was booked on a wrong flight in this test.
 
 ## Licence
