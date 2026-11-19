@@ -4,6 +4,10 @@ A live test of the Flight Network app inside ChatGPT, checked against se.flightn
 
 By Faris Sadik, 17 November 2026. An independent test of public pages, with no access to internal systems or data.
 
+[![tests](https://github.com/farrebutterfly-rgb/flight-time-check/actions/workflows/tests.yml/badge.svg)](https://github.com/farrebutterfly-rgb/flight-time-check/actions/workflows/tests.yml)
+
+**Open it:** download `Flight_time_check_app.html` from [Release v1.1](https://github.com/farrebutterfly-rgb/flight-time-check/releases/tag/v1.1) and double click it. No install, no network. The written report is in [Release v1.0](https://github.com/farrebutterfly-rgb/flight-time-check/releases/tag/v1.0).
+
 ## What is in here
 
 A finding, the fix, and a working program that enforces it. One contract and one airport table, implemented and tested in four languages against the same recorded data.

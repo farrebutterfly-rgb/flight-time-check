@@ -61,7 +61,7 @@ export function App() {
             <button key={k} role="tab" aria-selected={view === k} onClick={() => go(k)}>{label}</button>
           ))}
         </nav>
-        <span className="ex">Program by Faris Sadik · recorded 17 November 2026 · not affiliated with the operator</span>
+        <span className="ex">Program by Faris Sadik · recorded 17 November 2026 · independent test of public pages</span>
       </header>
       {view === "finding" && <Finding openSearch={openSearch} zoom={setZoom} />}
       {view === "searches" && <Searches open={open} setOpen={setOpen} zoom={setZoom} />}
